@@ -546,17 +546,6 @@ LocalPlayer.OnTeleport:Connect(function(State)
 	queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/NikoOneshot/atlasbss/refs/heads/main/pa.lua'))()")
 end)
 
-task.spawn(function()
-	local oldCode = game:HttpGet("https://raw.githubusercontent.com/NikoOneshot/atlasbss/refs/heads/main/rc.lua")
-	while wait(5) do
-		local new = game:HttpGet("https://raw.githubusercontent.com/NikoOneshot/atlasbss/refs/heads/main/rc.lua")
-		if new ~= oldCode then
-			oldCode = new
-			loadstring(oldCode)()
-		end
-	end
-end)
-
 local function WaitForAvailableServer()
 	local Current
 	local MaxPlayers = 6
