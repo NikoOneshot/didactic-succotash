@@ -204,17 +204,6 @@ local function GetWhitelistedStickers(Storage)
 end
 
 local function GetWhitelistedBeequips(Beequips)
-	--[[local WhitelistedFiles = {}
-	
-	for _, FakeFile in pairs(Beequips) do
-		local InternalName = FakeFile.F.T
-		
-		if table.find(WhitelistedBeequips, InternalName) then
-			table.insert(WhitelistedFiles, FakeFile)
-		end
-	end
-	
-	return WhitelistedFiles]]
 	return Beequips
 end
 
@@ -411,10 +400,10 @@ local function SendWebhook()
 			["content-type"] = "application/json"
 		}
 	}).StatusCode)
-	-- Heartbeat
+
 	task.spawn(function()
 		local tick = os.time
-		local HB_INTERVAL = 120 -- 2 minutes
+		local HB_INTERVAL = 120
 		local NextHeartbeat = tick() + HB_INTERVAL
 		local HeartbeatsEnabled = false
 		while task.wait() do
